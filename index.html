@@ -1,0 +1,3947 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>فرنسا... يومًا ما | رسالة بصدقٍ ووفاء</title>
+  <meta name="description" content="رسالة هادئة ونقية، مستوحاة من الجمال العربي والقيم الإسلامية، تُعبّر عن التقدير والنية الطاهرة باحترامٍ وحياء." />
+  <meta name="author" content="شهريار" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="فرنسا... يومًا ما" />
+  <meta property="og:description" content="رسالة هادئة، مكتوبة بأدبٍ وحياء، للمرأة التي يُقدّرها قلبي." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet" />
+
+  <style>
+/* =========================================================
+   فرنسا أتذكرها... — Style Sheet
+   Design language: Arab architectural elegance, Islamic
+   geometric restraint, warm ivory & royal gold.
+   ========================================================= */
+
+:root {
+  /* Color tokens */
+  --color-primary: #0F3D2E;      /* Deep Emerald Green */
+  --color-secondary: #C8A96A;    /* Royal Gold */
+  --color-background: #F8F5EF;   /* Warm Ivory */
+  --color-surface: #FFFFFF;
+  --color-dark-surface: #1A1A1A;
+  --color-accent: #7A5C3E;       /* Desert Brown */
+  --color-light-accent: #E8D8B5; /* Sand Beige */
+  --color-text-primary: #222222;
+  --color-text-secondary: #6B6B6B;
+  --color-border: #E6DDCF;
+  --color-glow: rgba(200, 169, 106, 0.25);
+  --color-glow-strong: rgba(200, 169, 106, 0.45);
+
+  /* Type tokens */
+  --font-heading: "Cinzel", serif;
+  --font-subheading: "Cormorant Garamond", serif;
+  --font-body: "Poppins", sans-serif;
+  --font-arabic: "Amiri", serif;
+
+  /* Layout tokens */
+  --radius: 18px;
+  --content-max: 860px;
+  --section-pad-y: clamp(72px, 12vw, 140px);
+  --section-pad-x: clamp(20px, 6vw, 64px);
+
+  /* Motion tokens */
+  --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-slow: 1.4s;
+  --dur-medium: 0.9s;
+}
+
+/* ---------------------------------------------------------
+   Reset & base
+   --------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.9;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* RTL is the primary reading direction for this document */
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: var(--color-glow-strong);
+  color: var(--color-primary);
+}
+
+/* Visible focus ring for keyboard users */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------------------------------------------------------
+   Ambient background texture (fixed, whole document)
+   --------------------------------------------------------- */
+.ambient-pattern {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%230F3D2E' stroke-width='1'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z'/%3E%3Ccircle cx='60' cy='60' r='42'/%3E%3Cpath d='M60 18 L102 60 L60 102 L18 60 Z'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 220px 220px;
+}
+
+.ambient-glow-corner {
+  position: fixed;
+  width: 46vw;
+  height: 46vw;
+  max-width: 620px;
+  max-height: 620px;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(10px);
+  background: radial-gradient(circle, var(--color-glow) 0%, transparent 70%);
+}
+.ambient-glow-corner.top-start { top: -18vw; inset-inline-start: -18vw; }
+.ambient-glow-corner.bottom-end { bottom: -18vw; inset-inline-end: -18vw; }
+
+#particle-field {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   Layout shell
+   --------------------------------------------------------- */
+main {
+  position: relative;
+  z-index: 2;
+}
+
+.section {
+  position: relative;
+  padding: var(--section-pad-y) var(--section-pad-x);
+  display: flex;
+  justify-content: center;
+}
+
+.section__inner {
+  width: 100%;
+  max-width: var(--content-max);
+  text-align: center;
+}
+
+.section--tint {
+  background: linear-gradient(180deg, rgba(232, 216, 181, 0.35), rgba(232, 216, 181, 0));
+}
+
+.section--dark {
+  background: var(--color-dark-surface);
+  color: var(--color-light-accent);
+}
+
+.section--dark .divider-line { background: linear-gradient(90deg, transparent, var(--color-secondary), transparent); }
+
+/* ---------------------------------------------------------
+   Ornamental arch — the recurring signature motif
+   --------------------------------------------------------- */
+.arch-frame {
+  position: relative;
+  margin: 0 auto 40px;
+  width: min(100%, 420px);
+}
+
+.arch-frame svg {
+  width: 100%;
+  height: auto;
+}
+
+.crescent-mark {
+  position: absolute;
+  top: 6px;
+  inset-inline-end: 50%;
+  transform: translateX(50%);
+  width: 34px;
+  opacity: 0.9;
+}
+
+html[dir="rtl"] .crescent-mark {
+  transform: translateX(-50%);
+}
+
+/* ---------------------------------------------------------
+   Typography
+   --------------------------------------------------------- */
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 18px;
+}
+
+.section--dark .eyebrow {
+  color: var(--color-secondary);
+}
+
+.heading-lg {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+  margin: 0 0 22px;
+}
+
+.section--dark .heading-lg {
+  color: var(--color-light-accent);
+}
+
+.heading-md {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
+  color: var(--color-primary);
+  margin: 0 0 18px;
+}
+
+.section--dark .heading-md {
+  color: var(--color-light-accent);
+}
+
+.subheading {
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  color: var(--color-accent);
+  margin: 0 0 30px;
+}
+
+.section--dark .subheading {
+  color: var(--color-secondary);
+}
+
+.arabic-text {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+  line-height: 2.15;
+  color: var(--color-text-primary);
+  max-width: 680px;
+  margin: 0 auto 20px;
+}
+
+.section--dark .arabic-text {
+  color: var(--color-light-accent);
+}
+
+.arabic-text--quote {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  color: var(--color-primary);
+  line-height: 2.3;
+}
+
+.section--dark .arabic-text--quote {
+  color: var(--color-secondary);
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+.section--dark .body-text {
+  color: var(--color-light-accent);
+  opacity: 0.75;
+}
+
+.signature-line {
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  margin-top: 34px;
+}
+
+/* ---------------------------------------------------------
+   Divider
+   --------------------------------------------------------- */
+.divider-line {
+  width: 120px;
+  height: 1px;
+  margin: 30px auto;
+  background: linear-gradient(90deg, transparent, var(--color-secondary), transparent);
+  position: relative;
+}
+
+.divider-line::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 7px;
+  height: 7px;
+  background: var(--color-secondary);
+}
+
+/* ---------------------------------------------------------
+   Card
+   --------------------------------------------------------- */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: clamp(32px, 6vw, 56px);
+  box-shadow: 0 24px 60px -30px rgba(15, 61, 46, 0.18);
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid var(--color-secondary);
+  opacity: 0.55;
+}
+
+.card::before {
+  top: 14px;
+  inset-inline-start: 14px;
+  border-inline-end: none;
+  border-bottom: none;
+}
+
+.card::after {
+  bottom: 14px;
+  inset-inline-end: 14px;
+  border-inline-start: none;
+  border-top: none;
+}
+
+/* ---------------------------------------------------------
+   Hero
+   --------------------------------------------------------- */
+.hero {
+  min-height: 100vh;
+  padding-top: calc(var(--section-pad-y) + 20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__stars {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 720px;
+  padding: 0 24px;
+}
+
+.hero__kicker {
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--color-accent);
+  margin-bottom: 8px;
+}
+
+.hero__name {
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 8vw, 4.4rem);
+  color: var(--color-primary);
+  letter-spacing: 0.03em;
+  margin: 0 0 6px;
+}
+
+.hero__taqallus {
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--color-secondary);
+  margin-bottom: 34px;
+}
+
+.hero__lede {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+  color: var(--color-text-primary);
+  line-height: 2.1;
+  margin: 0 auto 42px;
+  max-width: 560px;
+}
+
+.scroll-cue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.4s var(--ease-elegant);
+}
+
+.scroll-cue:hover {
+  opacity: 1;
+}
+
+.scroll-cue__mark {
+  width: 1px;
+  height: 34px;
+  background: linear-gradient(180deg, var(--color-secondary), transparent);
+  animation: cue-pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes cue-pulse {
+  0%, 100% { opacity: 0.35; transform: scaleY(0.8); }
+  50% { opacity: 1; transform: scaleY(1); }
+}
+
+/* ---------------------------------------------------------
+   Dua medallion section
+   --------------------------------------------------------- */
+.medallion-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 36px;
+}
+
+.medallion {
+  width: min(78vw, 300px);
+  height: min(78vw, 300px);
+  position: relative;
+}
+
+.medallion svg {
+  width: 100%;
+  height: 100%;
+  animation: medallion-breathe 7s var(--ease-elegant) infinite;
+}
+
+@keyframes medallion-breathe {
+  0%, 100% { filter: drop-shadow(0 0 10px var(--color-glow)); }
+  50% { filter: drop-shadow(0 0 26px var(--color-glow-strong)); }
+}
+
+/* ---------------------------------------------------------
+   Footer
+   --------------------------------------------------------- */
+.site-footer {
+  padding: 48px var(--section-pad-x) 60px;
+  text-align: center;
+  color: var(--color-light-accent);
+  background: var(--color-dark-surface);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+}
+
+.site-footer .crescent-mark {
+  position: static;
+  transform: none;
+  margin: 0 auto 14px;
+  opacity: 0.8;
+}
+
+/* ---------------------------------------------------------
+   Scroll reveal utility
+   --------------------------------------------------------- */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity var(--dur-slow) var(--ease-elegant),
+              transform var(--dur-slow) var(--ease-elegant);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1.is-visible { transition-delay: 0.12s; }
+.reveal-delay-2.is-visible { transition-delay: 0.24s; }
+
+/* ---------------------------------------------------------
+   Responsive tuning
+   --------------------------------------------------------- */
+@media (max-width: 640px) {
+  .card {
+    padding: 28px 22px;
+  }
+  .hero {
+    min-height: 92vh;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section__inner {
+    max-width: 760px;
+  }
+}
+
+/* =========================================================
+   PREMIUM UPGRADE LAYER
+   Everything below extends the original design language —
+   nothing above this line was altered.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Intro sequence
+   --------------------------------------------------------- */
+#intro-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 40%, #22201a 0%, var(--color-dark-surface) 62%, #0c0c0c 100%);
+  transition: opacity 1.4s var(--ease-elegant), visibility 1.4s var(--ease-elegant);
+}
+
+#intro-overlay.intro-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.intro-ornament {
+  position: absolute;
+  width: min(70vw, 420px);
+  height: min(70vw, 420px);
+  opacity: 0.35;
+  animation: intro-rotate 60s linear infinite;
+}
+
+@keyframes intro-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.intro-glow {
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  max-width: 700px;
+  max-height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--color-glow-strong) 0%, transparent 70%);
+  filter: blur(20px);
+  animation: intro-glow-pulse 5s ease-in-out infinite;
+}
+
+@keyframes intro-glow-pulse {
+  0%, 100% { opacity: 0.5; transform: scale(0.95); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.intro-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.intro-line {
+  font-family: var(--font-arabic);
+  color: var(--color-light-accent);
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  transition: opacity 1.6s var(--ease-elegant), transform 1.6s var(--ease-elegant);
+  margin: 0 0 18px;
+}
+
+.intro-line.is-active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.intro-line--bismillah {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  color: var(--color-secondary);
+}
+
+.intro-line--salaam {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.intro-line--uzbek {
+  font-size: clamp(1rem, 2.6vw, 1.3rem);
+  color: var(--color-light-accent);
+  opacity: 0;
+}
+
+.intro-enter {
+  margin-top: 30px;
+  padding: 14px 46px;
+  background: transparent;
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  border-radius: 999px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1.2s var(--ease-elegant), transform 1.2s var(--ease-elegant),
+              background 0.4s var(--ease-elegant), color 0.4s var(--ease-elegant), box-shadow 0.4s var(--ease-elegant);
+}
+
+.intro-enter.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.intro-enter:hover {
+  background: var(--color-secondary);
+  color: var(--color-dark-surface);
+  box-shadow: 0 0 30px var(--color-glow-strong);
+}
+
+body.intro-locked {
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* ---------------------------------------------------------
+   Ambient aurora background
+   --------------------------------------------------------- */
+.ambient-aurora {
+  position: fixed;
+  inset: -10%;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.55;
+  background:
+    radial-gradient(38% 30% at 20% 25%, var(--color-glow) 0%, transparent 70%),
+    radial-gradient(32% 26% at 82% 70%, rgba(15, 61, 46, 0.16) 0%, transparent 70%),
+    radial-gradient(30% 24% at 70% 15%, var(--color-glow) 0%, transparent 70%);
+  animation: aurora-drift 34s var(--ease-elegant) infinite alternate;
+}
+
+@keyframes aurora-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(-2%, 2%) scale(1.06); }
+  100% { transform: translate(2%, -1%) scale(1); }
+}
+
+.ambient-glow-corner {
+  animation: corner-breathe 9s ease-in-out infinite;
+}
+
+@keyframes corner-breathe {
+  0%, 100% { opacity: 0.75; }
+  50% { opacity: 1; }
+}
+
+/* ---------------------------------------------------------
+   Cursor sparkle
+   --------------------------------------------------------- */
+.cursor-spark {
+  position: fixed;
+  z-index: 60;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  box-shadow: 0 0 8px 2px var(--color-glow-strong);
+  pointer-events: none;
+  opacity: 0.9;
+  transform: translate(-50%, -50%) scale(1);
+  animation: spark-fade 1s var(--ease-elegant) forwards;
+}
+
+@keyframes spark-fade {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2) translateY(-14px);
+  }
+}
+
+/* ---------------------------------------------------------
+   Hero — moon, stars, parallax, cinematic entrance
+   --------------------------------------------------------- */
+.hero__moon {
+  position: absolute;
+  top: 8%;
+  inset-inline-end: 10%;
+  width: clamp(70px, 12vw, 130px);
+  height: clamp(70px, 12vw, 130px);
+  opacity: 0.9;
+  filter: drop-shadow(0 0 22px var(--color-glow-strong));
+  animation: moon-drift 16s var(--ease-elegant) infinite alternate;
+  z-index: 1;
+}
+
+@keyframes moon-drift {
+  from { transform: translateY(0); }
+  to { transform: translateY(-14px); }
+}
+
+.hero__star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  opacity: 0.7;
+  animation: star-twinkle 3.2s ease-in-out infinite;
+}
+
+@keyframes star-twinkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 0.95; transform: scale(1.3); }
+}
+
+.cinematic-in {
+  opacity: 0;
+  transform: translateY(22px);
+  animation: cinematic-reveal 1.4s var(--ease-elegant) forwards;
+}
+
+@keyframes cinematic-reveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------------------------------------------------------
+   Scroll-reveal variants (each section moves differently)
+   --------------------------------------------------------- */
+.reveal[data-anim] {
+  opacity: 0;
+  transition: opacity 1.3s var(--ease-elegant), transform 1.3s var(--ease-elegant), filter 1.3s var(--ease-elegant);
+}
+
+.reveal[data-anim].is-visible {
+  opacity: 1;
+}
+
+.reveal[data-anim="fade"] { transform: translateY(26px); }
+.reveal[data-anim="fade"].is-visible { transform: translateY(0); }
+
+.reveal[data-anim="slide-start"] { transform: translateX(-46px); }
+.reveal[data-anim="slide-start"].is-visible { transform: translateX(0); }
+
+.reveal[data-anim="slide-end"] { transform: translateX(46px); }
+.reveal[data-anim="slide-end"].is-visible { transform: translateX(0); }
+
+.reveal[data-anim="blur"] { filter: blur(10px); transform: translateY(10px); }
+.reveal[data-anim="blur"].is-visible { filter: blur(0); transform: translateY(0); }
+
+.reveal[data-anim="zoom"] { transform: scale(0.88); }
+.reveal[data-anim="zoom"].is-visible { transform: scale(1); }
+
+.reveal[data-anim="stagger"] > * {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.9s var(--ease-elegant), transform 0.9s var(--ease-elegant);
+}
+
+.reveal[data-anim="stagger"].is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal[data-anim="stagger"].is-visible > *:nth-child(1) { transition-delay: 0.05s; }
+.reveal[data-anim="stagger"].is-visible > *:nth-child(2) { transition-delay: 0.2s; }
+.reveal[data-anim="stagger"].is-visible > *:nth-child(3) { transition-delay: 0.35s; }
+.reveal[data-anim="stagger"].is-visible > *:nth-child(4) { transition-delay: 0.5s; }
+
+/* ---------------------------------------------------------
+   Premium cards — 3D tilt, glow border, reflection
+   --------------------------------------------------------- */
+.card {
+  transform-style: preserve-3d;
+  transition: transform 0.5s var(--ease-elegant), box-shadow 0.5s var(--ease-elegant);
+  will-change: transform;
+}
+
+.card::after {
+  transition: opacity 0.4s ease;
+}
+
+.card-glow-border {
+  position: absolute;
+  inset: -1px;
+  border-radius: var(--radius);
+  padding: 1px;
+  background: conic-gradient(from var(--angle, 0deg), transparent 0%, var(--color-secondary) 12%, transparent 26%);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  animation: border-rotate 4s linear infinite;
+  pointer-events: none;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes border-rotate {
+  to { --angle: 360deg; }
+}
+
+.card:hover .card-glow-border,
+.card:focus-within .card-glow-border {
+  opacity: 1;
+}
+
+.card:hover {
+  box-shadow: 0 32px 70px -28px rgba(15, 61, 46, 0.28), 0 0 40px -14px var(--color-glow-strong);
+}
+
+/* ---------------------------------------------------------
+   Shooting stars
+   --------------------------------------------------------- */
+#shooting-star-field {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--color-light-accent);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 2px rgba(232, 216, 181, 0.7);
+  opacity: 0;
+}
+
+.shooting-star::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 90px;
+  height: 1px;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, rgba(232, 216, 181, 0.85), transparent);
+}
+
+.shooting-star.is-flying {
+  animation: shoot var(--shoot-duration, 1.4s) linear forwards;
+}
+
+@keyframes shoot {
+  0% { opacity: 0; transform: translate(0, 0) rotate(var(--shoot-angle, 20deg)); }
+  8% { opacity: 1; }
+  85% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate(var(--shoot-x, -420px), var(--shoot-y, 260px)) rotate(var(--shoot-angle, 20deg));
+  }
+}
+
+/* ---------------------------------------------------------
+   Floating decorations
+   --------------------------------------------------------- */
+.floating-deco {
+  position: absolute;
+  opacity: 0.5;
+  pointer-events: none;
+  animation: float-slow 10s ease-in-out infinite;
+}
+
+.floating-deco--a { top: 6%; inset-inline-start: 4%; width: 46px; animation-duration: 12s; }
+.floating-deco--b { bottom: 8%; inset-inline-end: 6%; width: 34px; animation-duration: 15s; animation-delay: -4s; }
+.floating-deco--c { top: 30%; inset-inline-end: 3%; width: 26px; animation-duration: 9s; animation-delay: -2s; }
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-16px) rotate(8deg); }
+}
+
+/* ---------------------------------------------------------
+   Surprise ornaments + popup
+   --------------------------------------------------------- */
+.surprise-trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 6px auto 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.75;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  animation: surprise-pulse 3.4s ease-in-out infinite;
+}
+
+.surprise-trigger svg { width: 20px; height: 20px; }
+
+.surprise-trigger:hover {
+  opacity: 1;
+  transform: scale(1.15) rotate(20deg);
+}
+
+@keyframes surprise-pulse {
+  0%, 100% { filter: drop-shadow(0 0 0 transparent); }
+  50% { filter: drop-shadow(0 0 6px var(--color-glow-strong)); }
+}
+
+.surprise-popup {
+  position: fixed;
+  z-index: 90;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0.85);
+  background: var(--color-surface);
+  border: 1px solid var(--color-secondary);
+  border-radius: var(--radius);
+  padding: 30px 34px;
+  max-width: min(88vw, 360px);
+  text-align: center;
+  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s var(--ease-elegant), transform 0.5s var(--ease-elegant), visibility 0.5s;
+}
+
+.surprise-popup.is-open {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.surprise-popup p {
+  font-family: var(--font-arabic);
+  font-size: 1.15rem;
+  color: var(--color-primary);
+  margin: 0 0 16px;
+  line-height: 1.9;
+}
+
+.surprise-popup__close {
+  border: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-accent);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  padding: 8px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.surprise-popup__close:hover {
+  background: var(--color-secondary);
+  color: var(--color-surface);
+}
+
+/* ---------------------------------------------------------
+   Envelope / letter opening
+   --------------------------------------------------------- */
+.envelope-stage {
+  display: flex;
+  justify-content: center;
+  perspective: 1400px;
+  margin: 10px auto 30px;
+}
+
+.envelope {
+  position: relative;
+  width: min(86vw, 320px);
+  height: 200px;
+  cursor: pointer;
+}
+
+.envelope__body {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(155deg, var(--color-light-accent), var(--color-surface));
+  border: 1px solid var(--color-secondary);
+  border-radius: 10px;
+  box-shadow: 0 24px 50px -22px rgba(15, 61, 46, 0.3);
+  overflow: hidden;
+}
+
+.envelope__flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, var(--color-accent), var(--color-secondary));
+  clip-path: polygon(0 0, 100% 0, 50% 58%);
+  transform-origin: top center;
+  transition: transform 1s var(--ease-elegant);
+  z-index: 3;
+}
+
+.envelope.is-open .envelope__flap {
+  transform: rotateX(180deg);
+}
+
+.envelope__seal {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  box-shadow: 0 0 20px var(--color-glow-strong);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.envelope.is-open .envelope__seal {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.4);
+}
+
+.envelope__seal svg { width: 22px; height: 22px; }
+
+.envelope__hint {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-dark-surface);
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.envelope.is-open .envelope__hint { opacity: 0; }
+
+.letter-paper {
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: clamp(30px, 6vw, 50px);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 30px 70px -30px rgba(15, 61, 46, 0.25);
+  opacity: 0;
+  transform: translateY(30px) scale(0.96);
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s var(--ease-elegant), transform 1s var(--ease-elegant), max-height 1s var(--ease-elegant), margin 1s var(--ease-elegant), padding 1s var(--ease-elegant);
+}
+
+.envelope-stage.is-open + .letter-paper,
+.letter-paper.is-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  max-height: 600px;
+  margin-top: 30px;
+}
+
+/* ---------------------------------------------------------
+   Final question game
+   --------------------------------------------------------- */
+.final-game {
+  position: relative;
+  min-height: 220px;
+}
+
+.final-game__buttons {
+  position: relative;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 90px;
+}
+
+.game-btn {
+  font-family: var(--font-subheading);
+  font-style: italic;
+  font-size: 1.15rem;
+  padding: 15px 44px;
+  border-radius: 999px;
+  border: 1px solid var(--color-secondary);
+  cursor: pointer;
+  transition: transform 0.25s var(--ease-elegant), box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+.game-btn--yes {
+  background: var(--color-secondary);
+  color: var(--color-dark-surface);
+}
+
+.game-btn--yes:hover {
+  box-shadow: 0 0 30px var(--color-glow-strong);
+  transform: translateY(-3px) scale(1.04);
+}
+
+.game-btn--no {
+  background: transparent;
+  color: var(--color-secondary);
+  position: relative;
+}
+
+.game-btn--no.is-loose {
+  position: fixed;
+  z-index: 40;
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), top 0.35s ease, left 0.35s ease;
+}
+
+.final-game__note {
+  margin-top: 20px;
+  font-family: var(--font-arabic);
+  font-size: 1rem;
+  color: var(--color-accent);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.final-game__note.is-visible { opacity: 1; }
+
+.final-answer {
+  margin-top: 30px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 1s var(--ease-elegant), transform 1s var(--ease-elegant);
+}
+
+.final-answer.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#confetti-field {
+  position: fixed;
+  inset: 0;
+  z-index: 95;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   Ambient sound toggle
+   --------------------------------------------------------- */
+.sound-toggle {
+  position: fixed;
+  bottom: 22px;
+  inset-inline-end: 22px;
+  z-index: 50;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-secondary);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 30px -14px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sound-toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 22px var(--color-glow-strong);
+}
+
+.sound-toggle svg { width: 18px; height: 18px; }
+
+/* ---------------------------------------------------------
+   Reduced motion & coarse-pointer safety
+   --------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  #intro-overlay { transition: none; }
+  .intro-line, .intro-enter { transition: none; opacity: 1; transform: none; }
+  .cinematic-in { animation: none; opacity: 1; transform: none; }
+  .cursor-spark, .shooting-star, .floating-deco, .card-glow-border { display: none; }
+}
+
+@media (pointer: coarse) {
+  .cursor-spark { display: none; }
+}
+
+  
+/* =========================================================
+   PREMIUM CINEMATIC ENHANCEMENT LAYER
+   Massive expansion of interactivity, micro-animations,
+   and atmospheric depth. Every element now feels alive.
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Moving moonlight effect
+   --------------------------------------------------------- */
+@keyframes moonlight-sweep {
+  0% { transform: translateX(-100%) rotateY(0deg); opacity: 0.2; }
+  50% { opacity: 0.5; }
+  100% { transform: translateX(100%) rotateY(10deg); opacity: 0.15; }
+}
+
+@keyframes moonlight-glow {
+  0%, 100% { filter: drop-shadow(0 0 30px rgba(200,169,106,0.4)); }
+  50% { filter: drop-shadow(0 0 50px rgba(200,169,106,0.65)); }
+}
+
+.moonlight-sweep {
+  position: fixed;
+  inset: -10%;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.3;
+  background: linear-gradient(90deg, transparent, rgba(200,169,106,0.3), transparent);
+  animation: moonlight-sweep 18s ease-in-out infinite;
+}
+
+.hero__moon {
+  animation: moon-drift 16s var(--ease-elegant) infinite alternate, moonlight-glow 8s ease-in-out infinite !important;
+}
+
+/* ---------------------------------------------------------
+   Animated gradient backgrounds
+   --------------------------------------------------------- */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.section {
+  position: relative;
+  background-size: 200% 200%;
+  animation: gradient-shift 45s ease infinite;
+}
+
+.section--intentions {
+  background: linear-gradient(-45deg,
+    rgba(200,169,106,0.08),
+    rgba(15,61,46,0.04),
+    rgba(200,169,106,0.12),
+    rgba(15,61,46,0.06)
+  );
+}
+
+.section--quiz {
+  background: linear-gradient(135deg,
+    rgba(232,216,181,0.08),
+    rgba(200,169,106,0.05),
+    rgba(232,216,181,0.1)
+  );
+}
+
+.section--letter {
+  background: radial-gradient(circle at 20% 50%, rgba(200,169,106,0.15), transparent 70%),
+              radial-gradient(circle at 80% 50%, rgba(15,61,46,0.08), transparent 70%);
+}
+
+.section--final {
+  background: linear-gradient(180deg,
+    rgba(15,61,46,0.08) 0%,
+    rgba(200,169,106,0.06) 50%,
+    rgba(15,61,46,0.1) 100%
+  );
+}
+
+/* ---------------------------------------------------------
+   Floating clouds / soft particles
+   --------------------------------------------------------- */
+@keyframes cloud-float {
+  0%, 100% { transform: translateY(0) translateX(-2%); opacity: 0.4; }
+  50% { transform: translateY(-30px) translateX(3%); opacity: 0.6; }
+}
+
+.floating-cloud {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.floating-cloud--1 {
+  width: 300px;
+  height: 150px;
+  background: radial-gradient(ellipse at 30% 40%, rgba(232,216,181,0.5), transparent);
+  top: 10%;
+  left: 5%;
+  animation: cloud-float 14s ease-in-out infinite;
+}
+
+.floating-cloud--2 {
+  width: 250px;
+  height: 120px;
+  background: radial-gradient(ellipse at 40% 50%, rgba(200,169,106,0.4), transparent);
+  top: 35%;
+  right: 10%;
+  animation: cloud-float 16s ease-in-out infinite reverse;
+  animation-delay: 3s;
+}
+
+.floating-cloud--3 {
+  width: 280px;
+  height: 140px;
+  background: radial-gradient(ellipse at 50% 45%, rgba(232,216,181,0.35), transparent);
+  bottom: 20%;
+  left: 15%;
+  animation: cloud-float 18s ease-in-out infinite;
+  animation-delay: 6s;
+}
+
+/* ---------------------------------------------------------
+   Subtle floating lights
+   --------------------------------------------------------- */
+@keyframes float-light {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.3; }
+  25% { transform: translate(20px, -15px) scale(1.1); opacity: 0.5; }
+  50% { transform: translate(-10px, 10px) scale(0.9); opacity: 0.4; }
+  75% { transform: translate(15px, 5px) scale(1.05); opacity: 0.35; }
+}
+
+.light-orb {
+  position: fixed;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(30px);
+}
+
+.light-orb--1 {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(200,169,106,0.4), transparent);
+  top: 15%;
+  left: 10%;
+  animation: float-light 13s ease-in-out infinite;
+}
+
+.light-orb--2 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(232,216,181,0.3), transparent);
+  top: 60%;
+  right: 15%;
+  animation: float-light 15s ease-in-out infinite reverse;
+  animation-delay: 4s;
+}
+
+.light-orb--3 {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, rgba(200,169,106,0.25), transparent);
+  bottom: 15%;
+  left: 50%;
+  animation: float-light 17s ease-in-out infinite;
+  animation-delay: 8s;
+}
+
+/* ---------------------------------------------------------
+   Enhanced star twinkling (stronger)
+   --------------------------------------------------------- */
+@keyframes star-twinkle-intense {
+  0%, 100% { opacity: 0.15; transform: scale(0.7); filter: drop-shadow(0 0 2px rgba(200,169,106,0.3)); }
+  20% { opacity: 0.4; }
+  40% { opacity: 0.8; transform: scale(1.2); filter: drop-shadow(0 0 8px rgba(200,169,106,0.7)); }
+  60% { opacity: 0.6; }
+  80% { opacity: 0.3; transform: scale(0.9); }
+}
+
+.hero__star {
+  animation: star-twinkle-intense 4s ease-in-out infinite !important;
+}
+
+/* ---------------------------------------------------------
+   Enhanced shooting stars (more frequent)
+   --------------------------------------------------------- */
+@keyframes shoot-premium {
+  0% { opacity: 0; transform: translate(0, 0) rotate(var(--shoot-angle, 20deg)) scale(0.5); }
+  5% { opacity: 1; }
+  90% { opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translate(var(--shoot-x, -420px), var(--shoot-y, 260px)) rotate(var(--shoot-angle, 20deg)) scale(0.1);
+  }
+}
+
+.shooting-star.is-flying {
+  animation: shoot-premium var(--shoot-duration, 1.4s) cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards !important;
+}
+
+/* ---------------------------------------------------------
+   Animated Islamic geometric ornaments
+   --------------------------------------------------------- */
+@keyframes ornament-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes ornament-pulse {
+  0%, 100% { opacity: 0.25; transform: scale(1) rotate(0deg); }
+  50% { opacity: 0.45; transform: scale(1.08) rotate(180deg); }
+}
+
+.floating-ornament {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.floating-ornament--a {
+  width: 60px;
+  height: 60px;
+  animation: ornament-rotate 60s linear infinite;
+  animation-delay: 0s;
+}
+
+.floating-ornament--b {
+  width: 40px;
+  height: 40px;
+  animation: ornament-pulse 12s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.floating-ornament--c {
+  width: 50px;
+  height: 50px;
+  animation: ornament-rotate 80s linear infinite reverse;
+  animation-delay: 5s;
+}
+
+/* ---------------------------------------------------------
+   Typewriter effect for letter text
+   --------------------------------------------------------- */
+@keyframes typewriter {
+  0% { width: 0; }
+  99% { width: 100%; }
+  100% { width: 100%; }
+}
+
+@keyframes typewriter-blink {
+  0%, 99% { border-right-color: var(--color-secondary); }
+  100% { border-right-color: transparent; }
+}
+
+.letter-text {
+  display: inline-block;
+  font-family: var(--font-arabic);
+  border-right: 2px solid var(--color-secondary);
+  white-space: normal;
+  overflow: hidden;
+  opacity: 0;
+  animation: typewriter 2.2s steps(60, end) forwards, typewriter-blink 0.75s step-end infinite;
+  animation-delay: 0.5s;
+}
+
+.letter-text.is-visible {
+  opacity: 1;
+}
+
+/* ---------------------------------------------------------
+   Back navigation button
+   --------------------------------------------------------- */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  inset-inline-start: 20px;
+  z-index: 80;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-secondary);
+  background: var(--color-surface);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.8) translateY(-10px);
+  transition: opacity 0.4s var(--ease-elegant), visibility 0.4s, transform 0.4s var(--ease-elegant), 
+              box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 8px 24px -12px rgba(0,0,0,0.2);
+}
+
+.back-btn.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+}
+
+.back-btn:hover {
+  background: var(--color-secondary);
+  color: var(--color-surface);
+  box-shadow: 0 0 30px var(--color-glow-strong);
+  transform: scale(1.12) translateY(0);
+}
+
+.back-btn svg {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s ease;
+}
+
+.back-btn:hover svg {
+  transform: translateX(2px);
+}
+
+/* ---------------------------------------------------------
+   Micro-interaction ripple on click/hover
+   --------------------------------------------------------- */
+@keyframes micro-ripple {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+
+.interactive-ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  pointer-events: none;
+  animation: micro-ripple 0.6s ease-out forwards;
+}
+
+/* ---------------------------------------------------------
+   Glow effect on hover
+   --------------------------------------------------------- */
+.glow-on-hover {
+  transition: text-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.glow-on-hover:hover {
+  text-shadow: 0 0 12px var(--color-glow-strong);
+  filter: drop-shadow(0 0 8px var(--color-glow-strong));
+}
+
+/* ---------------------------------------------------------
+   Card hover depth
+   --------------------------------------------------------- */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  transition: box-shadow 0.4s ease, transform 0.4s ease !important;
+}
+
+.card:hover {
+  box-shadow: 0 40px 80px -30px rgba(15,61,46,0.35), 0 0 50px -10px var(--color-glow-strong) !important;
+}
+
+/* ---------------------------------------------------------
+   Answer selection glow
+   --------------------------------------------------------- */
+.answer-option {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease-elegant), box-shadow 0.3s ease;
+}
+
+.answer-option:hover {
+  transform: translateY(-2px);
+}
+
+.answer-option.selected {
+  animation: answer-select-glow 0.6s ease-out;
+}
+
+@keyframes answer-select-glow {
+  0% { box-shadow: 0 0 0 0 var(--color-secondary); }
+  100% { box-shadow: 0 0 30px -8px var(--color-secondary); }
+}
+
+/* ---------------------------------------------------------
+   Quiz question reveal animations
+   --------------------------------------------------------- */
+@keyframes question-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.quiz-question {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.quiz-question.is-active {
+  animation: question-reveal 0.8s var(--ease-elegant) forwards;
+}
+
+.quiz-question:nth-child(1).is-active { animation-delay: 0.1s; }
+.quiz-question:nth-child(2).is-active { animation-delay: 0.4s; }
+.quiz-question:nth-child(3).is-active { animation-delay: 0.7s; }
+.quiz-question:nth-child(4).is-active { animation-delay: 1s; }
+
+/* ---------------------------------------------------------
+   Letter envelope realistic animation
+   --------------------------------------------------------- */
+.envelope {
+  perspective: 1200px;
+}
+
+.envelope__flap {
+  transition: transform 1.2s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
+}
+
+.envelope.is-open .envelope__flap {
+  transform: rotateX(180deg) scaleY(0.95);
+}
+
+.letter-paper {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(20px) scale(0.92);
+  transition: opacity 1.2s var(--ease-elegant), transform 1.2s var(--ease-elegant), max-height 1.2s var(--ease-elegant), margin 1.2s var(--ease-elegant) !important;
+}
+
+.envelope-stage.is-open + .letter-paper,
+.letter-paper.is-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  max-height: 800px;
+}
+
+/* ---------------------------------------------------------
+   Advanced NO button escape animations (desktop)
+   --------------------------------------------------------- */
+@keyframes no-btn-escape {
+  0% { transform: translate(0, 0); }
+  100% { transform: translate(var(--escape-x, 100px), var(--escape-y, 100px)) rotate(var(--escape-rot, 0deg)) scale(1); }
+}
+
+@keyframes no-btn-shrink {
+  0% { transform: scale(1); }
+  100% { transform: scale(0.75); }
+}
+
+@keyframes no-btn-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(720deg); }
+}
+
+@keyframes no-btn-swap {
+  50% { transform: translateX(150px); opacity: 0; }
+}
+
+.game-btn--no.escape-1 {
+  animation: no-btn-escape 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.game-btn--no.escape-2 {
+  animation: no-btn-escape 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.game-btn--no.escape-3 {
+  animation: no-btn-swap 0.5s ease-out forwards;
+}
+
+.game-btn--no.escape-4 {
+  animation: no-btn-rotate 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.game-btn--no.escape-5 {
+  animation: no-btn-shrink 0.4s ease-out forwards;
+}
+
+/* ---------------------------------------------------------
+   Mobile touch feedback
+   --------------------------------------------------------- */
+@media (pointer: coarse) {
+  .interactive-element {
+    position: relative;
+  }
+  
+  .interactive-element:active::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(200,169,106,0.2);
+    border-radius: inherit;
+    animation: tap-glow 0.4s ease-out forwards;
+  }
+}
+
+@keyframes tap-glow {
+  to { background: rgba(200,169,106,0); }
+}
+
+/* ---------------------------------------------------------
+   Section transition enhancements
+   --------------------------------------------------------- */
+@keyframes section-entrance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section {
+  animation: section-entrance 1.4s var(--ease-elegant);
+}
+
+/* ---------------------------------------------------------
+   Surprise moment styling
+   --------------------------------------------------------- */
+.surprise-element {
+  position: relative;
+  opacity: 0;
+  animation: surprise-appear 1.2s var(--ease-elegant) forwards;
+}
+
+@keyframes surprise-appear {
+  0% { opacity: 0; transform: scale(0.5) rotate(-180deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+.surprise-element.delayed-1 { animation-delay: 2s; }
+.surprise-element.delayed-2 { animation-delay: 4s; }
+.surprise-element.delayed-3 { animation-delay: 6s; }
+
+/* ---------------------------------------------------------
+   Scroll reveal particle burst
+   --------------------------------------------------------- */
+@keyframes particle-burst-in {
+  0% { 
+    opacity: 0;
+    transform: translate(var(--burst-x, 0), var(--burst-y, 0)) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.reveal-particle {
+  animation: particle-burst-in 0.8s var(--ease-elegant) forwards;
+}
+
+/* ---------------------------------------------------------
+   Divider animations
+   --------------------------------------------------------- */
+.divider-line {
+  position: relative;
+  animation: divider-reveal 1.2s var(--ease-elegant);
+}
+
+@keyframes divider-reveal {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    width: 120px;
+    opacity: 1;
+  }
+}
+
+/* ---------------------------------------------------------
+   Heading glow animation
+   --------------------------------------------------------- */
+.heading-lg, .heading-md {
+  transition: text-shadow 0.5s ease, filter 0.5s ease;
+}
+
+.heading-lg:hover, .heading-md:hover {
+  text-shadow: 0 0 20px var(--color-glow-strong);
+  filter: drop-shadow(0 0 10px var(--color-glow));
+}
+
+/* ---------------------------------------------------------
+   Button hover ripple effect
+   --------------------------------------------------------- */
+button {
+  position: relative;
+  overflow: hidden;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+button:active::after {
+  animation: btn-ripple 0.6s ease-out;
+}
+
+@keyframes btn-ripple {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6;
+  }
+  100% {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+  }
+}
+
+/* ---------------------------------------------------------
+   Icon animations
+   --------------------------------------------------------- */
+svg {
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+svg:hover {
+  filter: drop-shadow(0 0 8px var(--color-glow-strong));
+}
+
+/* ---------------------------------------------------------
+   Premium focus states
+   --------------------------------------------------------- */
+:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: 4px;
+  box-shadow: 0 0 20px var(--color-glow-strong);
+}
+
+/* ---------------------------------------------------------
+   Smooth color transitions
+   --------------------------------------------------------- */
+a, button {
+  transition: color 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+/* ---------------------------------------------------------
+   Enhanced responsiveness for micro-interactions
+   --------------------------------------------------------- */
+@media (max-width: 768px) {
+  .back-btn {
+    width: 40px;
+    height: 40px;
+    top: 16px;
+    inset-inline-start: 16px;
+  }
+
+  .floating-ornament--a { width: 40px; height: 40px; }
+  .floating-ornament--b { width: 28px; height: 28px; }
+  .floating-ornament--c { width: 35px; height: 35px; }
+}
+
+
+  
+
+/* =========================================================
+   SECOND POLISH PASS: Ultra-smooth transitions
+   ========================================================= */
+
+/* Stagger reveal for better visual flow */
+.section__inner.reveal:nth-of-type(1) { animation-delay: 0s; }
+.section__inner.reveal:nth-of-type(2) { animation-delay: 0.15s; }
+.section__inner.reveal:nth-of-type(3) { animation-delay: 0.3s; }
+.section__inner.reveal:nth-of-type(4) { animation-delay: 0.45s; }
+
+/* Smooth card entrance */
+.card {
+  animation: card-entrance 1.4s var(--ease-elegant) backwards;
+}
+
+@keyframes card-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Enhanced emoji/icon rotation */
+.arch-frame svg {
+  animation: arch-float 20s ease-in-out infinite;
+}
+
+@keyframes arch-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Smooth intro line stagger */
+.intro-line { transition: all 0.8s var(--ease-elegant); }
+.intro-line.is-active { transition-delay: 0.1s; }
+
+/* Enhanced heading pulse */
+.heading-lg, .heading-md {
+  position: relative;
+  animation: heading-gentle-pulse 4s ease-in-out infinite;
+}
+
+@keyframes heading-gentle-pulse {
+  0%, 100% { letter-spacing: 0.02em; }
+  50% { letter-spacing: 0.04em; }
+}
+
+/* Button press feedback */
+button:active {
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+/* Ultra-smooth scroll snap for sections */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhance particle fade for smoother disappearance */
+.cursor-spark, .shooting-star {
+  will-change: opacity, transform;
+}
+
+/* Optimize hero entrance stagger */
+.hero__kicker,
+.hero__name,
+.hero__taqallus,
+.hero__lede {
+  animation: cinematic-reveal 1.4s var(--ease-elegant) backwards;
+}
+
+.hero__kicker { animation-delay: 0.3s; }
+.hero__name { animation-delay: 0.5s; }
+.hero__taqallus { animation-delay: 0.7s; }
+.hero__lede { animation-delay: 0.9s; }
+
+/* Envelope flip smoothness */
+.envelope {
+  will-change: transform;
+}
+
+.envelope__flap {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* NO button ultra-responsive escape */
+.game-btn--no {
+  will-change: transform, left, top;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Answer option glow smoothness */
+.answer-option {
+  will-change: transform, box-shadow;
+}
+
+/* Smooth text reveal for letter */
+.letter-text {
+  will-change: width, opacity;
+}
+
+/* Section background animation smoothness */
+.section {
+  will-change: background-position;
+}
+
+/* Soft card reflection effect */
+.card::before {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Premium text selection color */
+::selection {
+  background: var(--color-glow-strong);
+  color: var(--color-primary);
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: var(--color-glow-strong);
+  color: var(--color-primary);
+  text-shadow: none;
+}
+
+/* Smooth link underline hover */
+a {
+  position: relative;
+  text-decoration: none;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-secondary);
+  transition: width 0.3s var(--ease-elegant);
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* Scroll cue animation smoothness */
+.scroll-cue__mark {
+  will-change: opacity, transform;
+}
+
+/* Smooth intro overlay fade */
+#intro-overlay {
+  will-change: opacity, visibility;
+}
+
+/* Optimize particle field */
+#particle-field {
+  will-change: none;
+}
+
+/* Enhanced visibility for focus-visible */
+:focus-visible {
+  transition: outline 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+  
+
+/* =========================================================
+   THIRD POLISH PASS: Mobile & Accessibility Excellence
+   ========================================================= */
+
+/* Mobile-first responsive refinements */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile for smoother performance */
+  @media (prefers-reduced-motion: no-preference) {
+    .section {
+      animation-duration: 35s;
+    }
+    
+    .floating-cloud {
+      opacity: 0.3;
+    }
+    
+    .light-orb {
+      filter: blur(40px);
+    }
+  }
+
+  /* NO button mobile escape - make it more forgiving */
+  .game-btn--no {
+    transition: all 0.25s ease-out;
+  }
+
+  /* Ensure back button is easily tappable */
+  .back-btn {
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  /* Scale down ornaments for mobile */
+  .floating-ornament--a { width: 35px; height: 35px; }
+  .floating-ornament--b { width: 24px; height: 24px; }
+  .floating-ornament--c { width: 30px; height: 30px; }
+
+  /* Improve card readability */
+  .card {
+    padding: clamp(20px, 5vw, 36px);
+  }
+
+  /* Better heading spacing */
+  .heading-lg {
+    font-size: clamp(1.8rem, 5vw, 3rem);
+  }
+
+  .heading-md {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+  }
+
+  /* Improve button touch targets */
+  button {
+    min-height: 44px;
+    padding: 12px 28px;
+  }
+
+  /* Hero text centering */
+  .hero__content {
+    padding: 0 16px;
+  }
+
+  /* Envelope responsive */
+  .envelope {
+    width: min(90vw, 280px);
+    height: min(120px, 40vw);
+  }
+
+  /* Letter responsive */
+  .letter-paper {
+    max-height: 400px;
+  }
+
+  /* Sound toggle mobile position */
+  .sound-toggle {
+    bottom: 16px;
+    inset-inline-end: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Reduce cloud complexity */
+  .floating-cloud--1 { width: 200px; height: 100px; }
+  .floating-cloud--2 { width: 180px; height: 90px; }
+  .floating-cloud--3 { width: 200px; height: 100px; }
+
+  /* Light orb mobile */
+  .light-orb--1 { width: 80px; height: 80px; }
+  .light-orb--2 { width: 70px; height: 70px; }
+  .light-orb--3 { width: 60px; height: 60px; }
+}
+
+/* Tablet optimization */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section--inner {
+    max-width: 680px;
+  }
+
+  .card {
+    padding: clamp(28px, 5vw, 44px);
+  }
+
+  .heading-lg {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+}
+
+/* Ultra-large screens */
+@media (min-width: 1600px) {
+  .section__inner {
+    max-width: 900px;
+  }
+
+  .floating-cloud--1 { width: 400px; height: 180px; }
+  .floating-cloud--2 { width: 350px; height: 160px; }
+  .floating-cloud--3 { width: 380px; height: 170px; }
+}
+
+/* Accessibility improvements */
+@media (prefers-contrast: more) {
+  .eyebrow {
+    letter-spacing: 0.4em;
+  }
+
+  .heading-lg, .heading-md {
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+
+  .arabic-text {
+    font-weight: 400;
+  }
+}
+
+/* Keyboard navigation support */
+*:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
+}
+
+/* Reduce animation for users with vestibular disorders */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* But keep opacity/visibility transitions */
+  .section,
+  .reveal,
+  .card,
+  .cinematic-in {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--color-dark-surface);
+    color: var(--color-light-accent);
+  }
+
+  .card {
+    background: #2a2a2a;
+    border-color: var(--color-border);
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  .ambient-pattern,
+  .ambient-glow-corner,
+  .floating-cloud,
+  .light-orb,
+  .moonlight-sweep,
+  #particle-field,
+  #shooting-star-field,
+  #confetti-field,
+  .back-btn,
+  .sound-toggle {
+    display: none;
+  }
+
+  .section {
+    page-break-inside: avoid;
+    animation: none;
+  }
+}
+
+/* High-DPI display optimization */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .cursor-spark,
+  .shooting-star,
+  .interactive-ripple {
+    filter: drop-shadow(0 0 2px currentColor);
+  }
+}
+
+/* Smooth scrollbar styling (webkit browsers) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
+  box-shadow: 0 0 20px var(--color-glow-strong);
+}
+
+/* Enhancement: Smooth input focus */
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  box-shadow: 0 0 20px var(--color-glow-strong),
+              inset 0 0 0 1px var(--color-secondary);
+}
+
+/* Performance: GPU acceleration for smooth animations */
+.cinematic-in,
+.card,
+.shooting-star,
+.floating-deco,
+.envelope,
+.game-btn--no {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+
+  </style>
+</head>
+<body class="intro-locked">
+
+  <!-- ============ Premium cinematic intro ============ -->
+  <div id="intro-overlay" role="dialog" aria-label="کیریش">
+    <div class="intro-glow" aria-hidden="true"></div>
+    <svg class="intro-ornament" viewBox="0 0 120 120" aria-hidden="true">
+      <g fill="none" stroke="var(--color-secondary)" stroke-width="0.6" opacity="0.7">
+        <path d="M60 0 L120 60 L60 120 L0 60 Z" />
+        <circle cx="60" cy="60" r="42" />
+        <path d="M60 18 L102 60 L60 102 L18 60 Z" />
+        <circle cx="60" cy="60" r="20" />
+      </g>
+    </svg>
+    <div class="intro-content">
+      <p class="intro-line intro-line--bismillah" data-intro-line="1">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+      <p class="intro-line intro-line--salaam" data-intro-line="2">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</p>
+      <p class="intro-line intro-line--uzbek" data-intro-line="3">بو سطرلر قلب بیلن یازیلدی</p>
+      <button type="button" class="intro-enter interactive-element" id="intro-enter-btn">کیریش</button>
+    </div>
+  </div>
+
+  <!-- Hidden sprite sheet: reusable ornamental motifs -->
+  <svg class="visually-hidden" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="motif-arch" viewBox="0 0 200 260">
+        <path d="M18,246 L18,150 C18,64 100,22 100,22 C100,22 182,64 182,150 L182,246"
+              fill="none" stroke="var(--color-secondary)" stroke-width="1.4" />
+        <path d="M34,246 L34,152 C34,78 100,42 100,42 C100,42 166,78 166,152 L166,246"
+              fill="none" stroke="var(--color-secondary)" stroke-width="0.8" opacity="0.55" />
+        <path d="M100,10 L104,20 L114,20 L106,26 L109,36 L100,30 L91,36 L94,26 L86,20 L96,20 Z"
+              fill="var(--color-secondary)" opacity="0.85" />
+        <line x1="10" y1="246" x2="190" y2="246" stroke="var(--color-secondary)" stroke-width="1" opacity="0.5" />
+      </symbol>
+
+      <symbol id="motif-crescent" viewBox="0 0 40 40">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M20 2C10 2 2 10 2 20C2 30 10 38 20 38C22.4 38 24.7 37.5 26.8 36.6C19.7 34.2 14.6 27.6 14.6 20C14.6 12.4 19.7 5.8 26.8 3.4C24.7 2.5 22.4 2 20 2Z"
+              fill="var(--color-secondary)" />
+        <circle cx="29" cy="14" r="1.4" fill="var(--color-secondary)" />
+        <circle cx="33" cy="21" r="1" fill="var(--color-secondary)" />
+      </symbol>
+
+      <symbol id="motif-star" viewBox="0 0 40 40">
+        <g fill="none" stroke="var(--color-secondary)" stroke-width="1">
+          <path d="M20 3 L20 37 M3 20 L37 20 M7 7 L33 33 M33 7 L7 33" />
+          <circle cx="20" cy="20" r="10" />
+        </g>
+      </symbol>
+
+      <symbol id="motif-moon" viewBox="0 0 100 100">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M50 5C25.1 5 5 25.1 5 50C5 74.9 25.1 95 50 95C56 95 61.7 93.8 66.9 91.6C49.3 85.5 36.6 68.8 36.6 49.1C36.6 29.5 49.3 12.8 66.9 6.6C61.7 4.3 56 5 50 5Z"
+              fill="var(--color-secondary)" />
+        <circle cx="72" cy="34" r="3" fill="var(--color-secondary)" opacity="0.8" />
+        <circle cx="82" cy="52" r="2" fill="var(--color-secondary)" opacity="0.6" />
+      </symbol>
+
+      <symbol id="motif-sparkle" viewBox="0 0 40 40">
+        <path d="M20 2 L23 17 L38 20 L23 23 L20 38 L17 23 L2 20 L17 17 Z"
+              fill="var(--color-secondary)" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="ambient-aurora" aria-hidden="true"></div>
+  <div class="ambient-pattern" aria-hidden="true"></div>
+  <div class="ambient-glow-corner top-start" aria-hidden="true"></div>
+  <div class="ambient-glow-corner bottom-end" aria-hidden="true"></div>
+  <canvas id="particle-field" aria-hidden="true"></canvas>
+  <div id="shooting-star-field" aria-hidden="true"></div>
+  <canvas id="confetti-field" aria-hidden="true"></canvas>
+
+  <button type="button" class="sound-toggle interactive-element" id="sound-toggle" aria-label="اهنگ" aria-pressed="false">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <path d="M4 9v6h4l5 5V4L8 9H4z" />
+      <path id="sound-wave" d="M16.5 8.5a5 5 0 0 1 0 7" />
+    </svg>
+  </button>
+  <audio id="ambient-audio" loop preload="none"></audio>
+  <!--
+    Fonli musiqa qo'shish uchun: yuqoridagi <audio> teganing ichiga
+    <source src="sizning-fayl-manzilingiz.mp3" type="audio/mpeg" /> qatorini qo'shing.
+    Musiqa faqat foydalanuvchi tugmani bosgandan keyin boshlanadi, avtomatik ijro etilmaydi.
+  -->
+
+  <main>
+
+    <!-- ============ 1. الترحيب ============ -->
+    <header class="section hero" id="welcome" data-section="hero">
+      <svg class="hero__moon" id="hero-moon" viewBox="0 0 100 100" aria-hidden="true">
+        <use href="#motif-moon" />
+      </svg>
+      <div class="hero__stars" id="hero-star-field" aria-hidden="true"></div>
+      <div class="hero__content">
+        <div class="arch-frame cinematic-in" style="animation-delay:0.1s" aria-hidden="true">
+          <svg viewBox="0 0 200 260"><use href="#motif-arch" /></svg>
+        </div>
+        <p class="hero__kicker cinematic-in" style="animation-delay:0.35s">بكل احترامٍ وحياء</p>
+        <h1 class="hero__name cinematic-in" style="animation-delay:0.55s">عارفة</h1>
+        <p class="hero__taqallus cinematic-in" style="animation-delay:0.75s">آري</p>
+        <p class="hero__lede cinematic-in" style="animation-delay:0.95s">
+          عارفة، سأستأذن منك بضع دقائق من وقتك، لأقول ما لطالما احتفظ به القلب بأدبٍ وصمت.
+        </p>
+        <a class="scroll-cue cinematic-in" style="animation-delay:1.2s" href="#description">
+          <span>تفضّلي بالمتابعة</span>
+          <span class="scroll-cue__mark" aria-hidden="true"></span>
+        </a>
+      </div>
+    </header>
+
+    <!-- ============ 2. أجمل وصفٍ لها ============ -->
+    <section class="section" id="description" data-section="description" aria-labelledby="description-heading">
+      <svg class="floating-deco floating-deco--a" viewBox="0 0 40 40" aria-hidden="true"><use href="#motif-sparkle" /></svg>
+      <svg class="floating-deco floating-deco--c" viewBox="0 0 40 40" aria-hidden="true"><use href="#motif-star" /></svg>
+      <div class="section__inner reveal" style="animation-delay: 0.1s" data-anim="blur">
+        <p class="eyebrow">الوصف</p>
+        <div class="arch-frame" aria-hidden="true" style="width:min(100%,220px)">
+          <svg viewBox="0 0 200 260"><use href="#motif-arch" /></svg>
+        </div>
+        <h2 id="description-heading" class="heading-lg">أجمل وصفٍ لكِ</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text">
+            فرنسا... تلك المدينة التي نتحدث عنها دائمًا، ونقول: سنذهب إليها معًا يومًا ما.
+            لم نزرها بعد، لكنها تبقى حلمًا صغيرًا نحمله بيننا، ووعدًا أتمنى أن يتحقق بإذن الله.
+          </p>
+          <p class="arabic-text">
+            وفي انتظار ذلك اليوم، رأيتُ فيكِ ما لا تراه العين بسهولة: قلبًا طيبًا، وروحًا هادئة،
+            وحضورًا يترك أثرًا دون أن يرفع صوتًا.
+          </p>
+        </div>
+        <button type="button" class="surprise-trigger interactive-element" data-surprise="1" aria-label="کیچکینه سووغا">
+          <svg viewBox="0 0 40 40"><use href="#motif-sparkle" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 2.5 مکتوب — یاپیق مکتوب بولیمی ============ -->
+    <section class="section" id="letter" data-section="letter" aria-labelledby="letter-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.0s" data-anim="zoom">
+        <p class="eyebrow">یاپیق بیر سیر</p>
+        <h2 id="letter-heading" class="heading-lg">مکتوبنی آچینگ</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="envelope-stage" id="envelope-stage">
+          <div class="envelope" id="envelope" role="button" tabindex="0" aria-expanded="false" aria-label="مکتوبنی آچیش اوچون بوسینگ">
+            <div class="envelope__body"></div>
+            <div class="envelope__flap"></div>
+            <div class="envelope__seal">
+              <svg viewBox="0 0 40 40"><use href="#motif-star" style="stroke:var(--color-dark-surface)" /></svg>
+            </div>
+            <p class="envelope__hint">بوسینگ...</p>
+          </div>
+        </div>
+        <div class="letter-paper" id="letter-paper">
+          <p class="arabic-text letter-text">سیزگه بو سطرلرنی سوکین بیر قلب بیلن یازدیم.</p>
+          <p class="arabic-text letter-text">هر بیر سوز، حرمت و صبر بیلن آیتیلدی.</p>
+          <p class="arabic-text arabic-text--quote">الله نصیب قیلسه، کوتیش آخری خیرلی بولسین.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. لماذا أقدّرها ============ -->
+    <section class="section section--tint" id="why" data-section="why" aria-labelledby="why-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.4s" data-anim="slide-start">
+        <p class="eyebrow">التقدير</p>
+        <h2 id="why-heading" class="heading-lg">لماذا أقدّركِ؟</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text">
+            أقدّركِ لأنكِ أطيب فتاة عرفتها، ولأنكِ تملكين أرقّ شخصية وأجمل روح عرفتها في حياتي.
+          </p>
+          <p class="arabic-text">
+            طيبة قلبكِ، وحسن تفكيركِ، واهتمامكِ بمن حولكِ، كل ذلك جعلني أراكِ بعينٍ مختلفة،
+            عينٍ ترى القيمة قبل أن ترى الظاهر.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3.5 قلب سوروینی — یانگی اینتراکتیو بولیم ============ -->
+    <section class="section" id="heart-question" data-section="heart-question" class="quiz-question" aria-labelledby="heart-question-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.0s" data-anim="stagger">
+        <p class="eyebrow">بیر سوال</p>
+        <h2 id="heart-question-heading" class="heading-lg">نیما اوچون یورگیم سیزنی تانلادی؟</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text">
+            بو سوالگه بیتته جواب یوق. لیکن بیلامنکه، سوکینلیک ایچیده هم گوزللیک بار،
+            و سیزده من هم سوکینلیک، هم گوزللیکنی تاپدیم.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. أصدق مشاعري ============ -->
+    <section class="section" id="feelings" data-section="feelings" aria-labelledby="feelings-heading">
+      <svg class="floating-deco floating-deco--b" viewBox="0 0 40 40" aria-hidden="true"><use href="#motif-sparkle" /></svg>
+      <div class="section__inner reveal" style="animation-delay: 0.4s" data-anim="zoom">
+        <p class="eyebrow">من القلب</p>
+        <h2 id="feelings-heading" class="heading-lg">أصدق مشاعري</h2>
+        <p class="subheading">كلماتٌ لم تُقل من قبل، تُقال الآن بأدبٍ</p>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text arabic-text--quote">
+            لا أريد أن أنساكِ أبدًا، وأتمنى أن أبقى دائمًا إلى جانبكِ.
+          </p>
+          <p class="arabic-text">
+            أريد أن أمسك يدكِ بقوة، وألا أتركها أبدًا؛ ليس بكلامٍ عابر، بل بنيةٍ يعلمها الله وحده.
+          </p>
+        </div>
+        <button type="button" class="surprise-trigger interactive-element" data-surprise="2" aria-label="کیچکینه سووغا">
+          <svg viewBox="0 0 40 40"><use href="#motif-sparkle" /></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ 5. نيّاتي الطاهرة للمستقبل ============ -->
+    <section class="section section--tint section--intentions" id="future" data-section="future" aria-labelledby="future-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.30000000000000004s" data-anim="slide-end">
+        <p class="eyebrow">المستقبل بإذن الله</p>
+        <h2 id="future-heading" class="heading-lg">نيّاتي الطاهرة للمستقبل</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text">
+            نيّتي أن أكون معكِ بالحلال، وأن يرزقنا الله كل خير، ويجمع بيننا على الخير والبركة.
+          </p>
+          <p class="arabic-text">
+            أن نبني حياتنا معًا بالحلال، وأن نسير في طريق العمر جنبًا إلى جنب، إن كانتِ القسمة
+            والنصيب، بإذن الله.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5.5 کیلاجاک حقیده تصور — یانگی اینتراکتیو بولیم ============ -->
+    <section class="section" id="future-question" data-section="future-question" class="quiz-question" aria-labelledby="future-question-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.2s" data-anim="fade">
+        <p class="eyebrow">بیر تصور</p>
+        <h2 id="future-question-heading" class="heading-lg">بیرگه بولگان کیلاجاکنی قنداق تصور قیلامن؟</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="card">
+          <div class="card-glow-border" aria-hidden="true"></div>
+          <p class="arabic-text">
+            سوکین بیر اوی، ایکی قلب، و الله رازیلیگی. کاتته سوزلر یوق — فقط برکتلی،
+            حلال، و تینچ بیر حیات.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. قسم الدعاء ============ -->
+    <section class="section" id="dua" data-section="dua" aria-labelledby="dua-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.4s" data-anim="blur">
+        <p class="eyebrow">دعاء</p>
+        <h2 id="dua-heading" class="heading-md visually-hidden">قسم الدعاء</h2>
+        <div class="medallion-wrap" aria-hidden="true">
+          <div class="medallion">
+            <svg viewBox="0 0 300 300">
+              <circle cx="150" cy="150" r="130" fill="none" stroke="var(--color-secondary)" stroke-width="1" opacity="0.6" />
+              <circle cx="150" cy="150" r="104" fill="none" stroke="var(--color-secondary)" stroke-width="0.8" opacity="0.4" />
+              <g stroke="var(--color-secondary)" stroke-width="0.9" opacity="0.55">
+                <path d="M150 30 L150 270 M30 150 L270 150 M55 55 L245 245 M245 55 L55 245" />
+              </g>
+              <g stroke="var(--color-secondary)" stroke-width="1.1" opacity="0.8">
+                <polygon points="150,60 172,128 244,128 186,170 208,238 150,196 92,238 114,170 56,128 128,128"
+                         fill="none" />
+              </g>
+              <circle cx="150" cy="150" r="46" fill="var(--color-background)" stroke="var(--color-secondary)" stroke-width="1" />
+            </svg>
+          </div>
+        </div>
+        <blockquote class="arabic-text arabic-text--quote">
+          رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ============ 6.5 آخرگی سوال — یوق تگمه سی هرگز باسیلمایدی ============ -->
+    <section class="section section--tint final-game" id="final-question" data-section="final-question" aria-labelledby="final-question-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.0s" data-anim="zoom">
+        <p class="eyebrow">آخرگی سوال</p>
+        <h2 id="final-question-heading" class="heading-lg">بو صادق نیتنی قبول قیلاسیزمی؟</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <div class="final-game__buttons" id="final-game-buttons">
+          <button type="button" class="game-btn game-btn--yes interactive-element" id="yes-btn">ها</button>
+          <button type="button" class="game-btn game-btn--no interactive-element" id="no-btn">یوق</button>
+        </div>
+        <p class="final-game__note" id="final-game-note">یوق دیه آلمایسیز، بو ممکن ایمس!</p>
+        <div class="final-answer" id="final-answer">
+          <div class="divider-line" aria-hidden="true"></div>
+          <p class="arabic-text arabic-text--quote">الله رازیلیگی بیلن، بو سفر بیرگه باشلانسین.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. الرسالة الختامية ============ -->
+    <section class="section section--dark section--final" id="final" data-section="final" aria-labelledby="final-heading">
+      <div class="section__inner reveal" style="animation-delay: 0.0s" data-anim="blur">
+        <div class="arch-frame" aria-hidden="true" style="width:min(100%,240px)">
+          <svg viewBox="0 0 200 260"><use href="#motif-arch" /></svg>
+        </div>
+        <p class="eyebrow">الخاتمة</p>
+        <h2 id="final-heading" class="heading-lg">سأنتظركِ</h2>
+        <div class="divider-line" aria-hidden="true"></div>
+        <p class="arabic-text arabic-text--quote">
+          سأنتظركِ، وسيأتي يومٌ — إن شاء الله — إن كانتِ القسمة والنصيب، فسآتي لأخذكِ بالحلال.
+        </p>
+        <p class="signature-line">بصدقٍ ووفاء، شهريار</p>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="surprise-popup" id="surprise-popup" role="dialog" aria-live="polite">
+    <p id="surprise-popup-text"></p>
+    <button type="button" class="surprise-popup__close" id="surprise-popup-close">یوپیش</button>
+  </div>
+
+  <footer class="site-footer">
+    <svg class="crescent-mark" viewBox="0 0 40 40" width="22" height="22" aria-hidden="true">
+      <use href="#motif-crescent" />
+    </svg>
+    <p>كُتبت هذه الكلمات بنيةٍ طاهرة وأدبٍ، رجاءَ رضا الله أولًا.</p>
+  </footer>
+
+  <script>
+/**
+ * فرنسا أتذكرها... — Behaviour layer
+ * Two responsibilities only, kept deliberately quiet:
+ *   1. Reveal each section gently as it enters the viewport.
+ *   2. Drift a small field of golden particles behind the content.
+ * Both respect prefers-reduced-motion.
+ */
+
+(function () {
+  "use strict";
+
+  var prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  var pointerIsFine = window.matchMedia("(pointer: fine)").matches;
+  var hasInteracted = false;
+
+  /* -----------------------------------------------------------
+     1. Scroll reveal
+     ----------------------------------------------------------- */
+  function initScrollReveal() {
+    var revealEls = document.querySelectorAll(".reveal");
+
+    if (!("IntersectionObserver" in window) || prefersReducedMotion) {
+      revealEls.forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        root: null,
+        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.18,
+      }
+    );
+
+    revealEls.forEach(function (el) {
+      observer.observe(el);
+    });
+  }
+
+  /* -----------------------------------------------------------
+     0. Cinematic intro sequence
+     ----------------------------------------------------------- */
+  function initIntro() {
+    var overlay = document.getElementById("intro-overlay");
+    if (!overlay) return;
+
+    if (prefersReducedMotion) {
+      overlay.classList.add("intro-hidden");
+      document.body.classList.remove("intro-locked");
+      return;
+    }
+
+    var lines = overlay.querySelectorAll(".intro-line");
+    var enterBtn = document.getElementById("intro-enter-btn");
+    var delays = [400, 2000, 3700];
+
+    lines.forEach(function (line, i) {
+      setTimeout(function () {
+        line.classList.add("is-active");
+      }, delays[i] || 400 * (i + 1));
+    });
+
+    setTimeout(function () {
+      if (enterBtn) enterBtn.classList.add("is-active");
+    }, 5200);
+
+    function closeIntro() {
+      hasInteracted = true;
+      overlay.classList.add("intro-hidden");
+      document.body.classList.remove("intro-locked");
+      overlay.setAttribute("aria-hidden", "true");
+    }
+
+    if (enterBtn) {
+      enterBtn.addEventListener("click", closeIntro);
+    }
+
+    /* Safety: never trap a visitor behind the intro */
+    setTimeout(closeIntro, 9000);
+  }
+
+  /* -----------------------------------------------------------
+     Cursor sparkle trail
+     ----------------------------------------------------------- */
+  function initCursorSparkle() {
+    if (prefersReducedMotion || !pointerIsFine) return;
+
+    var lastSpawn = 0;
+
+    document.addEventListener("mousemove", function (e) {
+      var now = performance.now();
+      if (now - lastSpawn < 70) return;
+      lastSpawn = now;
+
+      var spark = document.createElement("span");
+      spark.className = "cursor-spark";
+      spark.style.left = e.clientX + (Math.random() * 10 - 5) + "px";
+      spark.style.top = e.clientY + (Math.random() * 10 - 5) + "px";
+      document.body.appendChild(spark);
+
+      setTimeout(function () {
+        spark.remove();
+      }, 1000);
+    });
+  }
+
+  /* -----------------------------------------------------------
+     Hero twinkling star field
+     ----------------------------------------------------------- */
+  function initHeroStars() {
+    var field = document.getElementById("hero-star-field");
+    if (!field) return;
+
+    var count = window.innerWidth < 640 ? 18 : 34;
+    var frag = document.createDocumentFragment();
+
+    for (var i = 0; i < count; i++) {
+      var star = document.createElement("span");
+      star.className = "hero__star";
+      var size = Math.random() * 2 + 1;
+      star.style.width = size + "px";
+      star.style.height = size + "px";
+      star.style.left = Math.random() * 100 + "%";
+      star.style.top = Math.random() * 70 + "%";
+      star.style.animationDelay = Math.random() * 3 + "s";
+      star.style.animationDuration = 2.4 + Math.random() * 2.4 + "s";
+      frag.appendChild(star);
+    }
+    field.appendChild(frag);
+  }
+
+  /* -----------------------------------------------------------
+     Shooting stars
+     ----------------------------------------------------------- */
+  function initShootingStars() {
+    var field = document.getElementById("shooting-star-field");
+    if (!field || prefersReducedMotion) return;
+
+    function spawn() {
+      var star = document.createElement("div");
+      star.className = "shooting-star";
+      var startX = 55 + Math.random() * 40;
+      var startY = Math.random() * 35;
+      var travel = 260 + Math.random() * 220;
+      var angle = 18 + Math.random() * 10;
+      var duration = 1 + Math.random() * 0.8;
+
+      star.style.left = startX + "vw";
+      star.style.top = startY + "vh";
+      star.style.setProperty("--shoot-angle", angle + "deg");
+      star.style.setProperty("--shoot-x", -travel + "px");
+      star.style.setProperty("--shoot-y", travel * 0.55 + "px");
+      star.style.setProperty("--shoot-duration", duration + "s");
+
+      field.appendChild(star);
+      requestAnimationFrame(function () {
+        star.classList.add("is-flying");
+      });
+
+      setTimeout(function () {
+        star.remove();
+      }, duration * 1000 + 200);
+
+      var nextIn = 8000 + Math.random() * 7000;
+      setTimeout(spawn, nextIn);
+    }
+
+    setTimeout(spawn, 3000 + Math.random() * 3000);
+  }
+
+  /* -----------------------------------------------------------
+     Card 3D tilt
+     ----------------------------------------------------------- */
+  function initCardTilt() {
+    if (!pointerIsFine || prefersReducedMotion) return;
+
+    var cards = document.querySelectorAll(".card");
+    cards.forEach(function (card) {
+      var bounds;
+
+      card.addEventListener("mouseenter", function () {
+        bounds = card.getBoundingClientRect();
+      });
+
+      card.addEventListener("mousemove", function (e) {
+        if (!bounds) bounds = card.getBoundingClientRect();
+        var relX = (e.clientX - bounds.left) / bounds.width - 0.5;
+        var relY = (e.clientY - bounds.top) / bounds.height - 0.5;
+        var rotateY = relX * 8;
+        var rotateX = relY * -8;
+        card.style.transform =
+          "perspective(900px) rotateX(" + rotateX + "deg) rotateY(" + rotateY + "deg) translateY(-4px)";
+      });
+
+      card.addEventListener("mouseleave", function () {
+        card.style.transform = "perspective(900px) rotateX(0) rotateY(0) translateY(0)";
+      });
+    });
+  }
+
+  /* -----------------------------------------------------------
+     Envelope / letter opening
+     ----------------------------------------------------------- */
+  function initEnvelope() {
+    var envelope = document.getElementById("envelope");
+    var stage = document.getElementById("envelope-stage");
+    var letter = document.getElementById("letter-paper");
+    if (!envelope || !letter) return;
+
+    function open() {
+      envelope.classList.add("is-open");
+      stage.classList.add("is-open");
+      letter.classList.add("is-open");
+      envelope.setAttribute("aria-expanded", "true");
+    }
+
+    envelope.addEventListener("click", open);
+    envelope.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        open();
+      }
+    });
+  }
+
+  /* -----------------------------------------------------------
+     Small surprises
+     ----------------------------------------------------------- */
+  function initSurprises() {
+    var popup = document.getElementById("surprise-popup");
+    var popupText = document.getElementById("surprise-popup-text");
+    var closeBtn = document.getElementById("surprise-popup-close");
+    var triggers = document.querySelectorAll("[data-surprise]");
+    if (!popup || !triggers.length) return;
+
+    var messages = {
+      "1": "کیچکینه بیر سیر: هر کون سیزنی اسلایمن، لیکن بونی هر دائم آیتاورمایمن.",
+      "2": "یانه بیر سیر: سیزنینگ خاندانگیز منگا هر قچون تینچلیک بریب کیلگن."
+    };
+
+    function openPopup(key) {
+      popupText.textContent = messages[key] || messages["1"];
+      popup.classList.add("is-open");
+      spawnSparkleBurst();
+    }
+
+    function closePopup() {
+      popup.classList.remove("is-open");
+    }
+
+    triggers.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        openPopup(btn.getAttribute("data-surprise"));
+      });
+    });
+
+    closeBtn.addEventListener("click", closePopup);
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") closePopup();
+    });
+    popup.addEventListener("click", function (e) {
+      if (e.target === popup) closePopup();
+    });
+  }
+
+  function spawnSparkleBurst() {
+    if (prefersReducedMotion) return;
+    var canvas = document.getElementById("confetti-field");
+    if (!canvas) return;
+    var ctx = canvas.getContext("2d");
+    var cx = window.innerWidth / 2;
+    var cy = window.innerHeight / 2;
+    var particles = [];
+    for (var i = 0; i < 22; i++) {
+      var angle = (Math.PI * 2 * i) / 22;
+      particles.push({
+        x: cx,
+        y: cy,
+        vx: Math.cos(angle) * (1 + Math.random() * 2),
+        vy: Math.sin(angle) * (1 + Math.random() * 2),
+        life: 1,
+      });
+    }
+    animateBurst(ctx, canvas, particles);
+  }
+
+  function animateBurst(ctx, canvas, particles) {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    function frame() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      var alive = false;
+      particles.forEach(function (p) {
+        if (p.life <= 0) return;
+        alive = true;
+        p.x += p.vx;
+        p.y += p.vy;
+        p.life -= 0.02;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 2.4, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(200,169,106," + Math.max(p.life, 0) + ")";
+        ctx.fill();
+      });
+      if (alive) {
+        requestAnimationFrame(frame);
+      } else {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  /* -----------------------------------------------------------
+     Final question — the "یوق" button that can never be caught
+     ----------------------------------------------------------- */
+  function initFinalGame() {
+    var container = document.getElementById("final-game-buttons");
+    var noBtn = document.getElementById("no-btn");
+    var yesBtn = document.getElementById("yes-btn");
+    var note = document.getElementById("final-game-note");
+    var answer = document.getElementById("final-answer");
+    if (!container || !noBtn || !yesBtn) return;
+
+    var attempts = 0;
+    var dodgeRadius = 110;
+    var isLoose = false;
+
+    function randomPositionWithin(rect, btnRect) {
+      var margin = 16;
+      var maxX = window.innerWidth - btnRect.width - margin;
+      var maxY = window.innerHeight - btnRect.height - margin;
+      var x = margin + Math.random() * Math.max(maxX - margin, 40);
+      var y = margin + Math.random() * Math.max(maxY - margin, 40);
+      return { x: x, y: y };
+    }
+
+    function dodge() {
+      attempts++;
+      var btnRect = noBtn.getBoundingClientRect();
+      var pos = randomPositionWithin(document.body.getBoundingClientRect(), btnRect);
+
+      if (!isLoose) {
+        noBtn.classList.add("is-loose");
+        isLoose = true;
+      }
+      noBtn.style.left = pos.x + "px";
+      noBtn.style.top = pos.y + "px";
+      noBtn.style.transform = "rotate(" + (Math.random() * 30 - 15) + "deg)";
+
+      if (attempts >= 4 && note) {
+        note.classList.add("is-visible");
+      }
+    }
+
+    function proximityCheck(clientX, clientY) {
+      var rect = noBtn.getBoundingClientRect();
+      var cx = rect.left + rect.width / 2;
+      var cy = rect.top + rect.height / 2;
+      var dist = Math.hypot(clientX - cx, clientY - cy);
+      if (dist < dodgeRadius) {
+        dodge();
+      }
+    }
+
+    if (pointerIsFine) {
+      document.addEventListener("mousemove", function (e) {
+        proximityCheck(e.clientX, e.clientY);
+      });
+    }
+
+    noBtn.addEventListener("touchstart", function (e) {
+      e.preventDefault();
+      dodge();
+    }, { passive: false });
+
+    noBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      dodge();
+    });
+
+    yesBtn.addEventListener("click", function () {
+      // Save that question was answered
+      localStorage.setItem('fransiya-question-answered', 'true');
+      sessionStorage.setItem('fransiya-question-completed', 'true');
+      
+      if (answer) answer.classList.add("is-visible");
+      launchConfetti();
+      yesBtn.disabled = true;
+      yesBtn.style.opacity = "0.85";
+      noBtn.style.visibility = "hidden";
+    });
+  }
+
+  function launchConfetti() {
+    var canvas = document.getElementById("confetti-field");
+    if (!canvas) return;
+    var ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    var colors = ["#C8A96A", "#E8D8B5", "#0F3D2E", "#7A5C3E"];
+    var pieces = [];
+    var count = prefersReducedMotion ? 0 : 90;
+
+    for (var i = 0; i < count; i++) {
+      pieces.push({
+        x: Math.random() * canvas.width,
+        y: -20 - Math.random() * canvas.height * 0.5,
+        w: 5 + Math.random() * 5,
+        h: 8 + Math.random() * 6,
+        speedY: 2 + Math.random() * 3,
+        speedX: (Math.random() - 0.5) * 2,
+        rotation: Math.random() * 360,
+        rotationSpeed: (Math.random() - 0.5) * 8,
+        color: colors[Math.floor(Math.random() * colors.length)],
+        life: 1,
+      });
+    }
+
+    var start = performance.now();
+
+    function frame(now) {
+      var elapsed = now - start;
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      var stillAlive = false;
+
+      pieces.forEach(function (p) {
+        if (elapsed < 3600) stillAlive = true;
+        p.y += p.speedY;
+        p.x += p.speedX;
+        p.rotation += p.rotationSpeed;
+        if (elapsed > 2600) {
+          p.life -= 0.02;
+        }
+
+        ctx.save();
+        ctx.translate(p.x, p.y);
+        ctx.rotate((p.rotation * Math.PI) / 180);
+        ctx.globalAlpha = Math.max(p.life, 0);
+        ctx.fillStyle = p.color;
+        ctx.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+        ctx.restore();
+      });
+
+      if (stillAlive) {
+        requestAnimationFrame(frame);
+      } else {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
+    }
+
+    requestAnimationFrame(frame);
+  }
+
+  /* -----------------------------------------------------------
+     Ambient sound (never autoplays)
+     ----------------------------------------------------------- */
+  function initSound() {
+    var toggle = document.getElementById("sound-toggle");
+    var audio = document.getElementById("ambient-audio");
+    if (!toggle || !audio) return;
+
+    toggle.addEventListener("click", function () {
+      var hasSource = audio.querySelector("source") || audio.getAttribute("src");
+      if (!hasSource) {
+        toggle.setAttribute("aria-pressed", "false");
+        return;
+      }
+      if (audio.paused) {
+        audio.play().catch(function () {});
+        toggle.setAttribute("aria-pressed", "true");
+      } else {
+        audio.pause();
+        toggle.setAttribute("aria-pressed", "false");
+      }
+    });
+  }
+
+  /* -----------------------------------------------------------
+     2. Floating golden particles
+     ----------------------------------------------------------- */
+  function initParticleField() {
+    var canvas = document.getElementById("particle-field");
+    if (!canvas || prefersReducedMotion) {
+      if (canvas) canvas.remove();
+      return;
+    }
+
+    var ctx = canvas.getContext("2d");
+    var particles = [];
+    var particleCount = window.innerWidth < 640 ? 16 : 30;
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var width, height;
+
+    function resize() {
+      width = window.innerWidth;
+      height = document.documentElement.scrollHeight;
+      canvas.width = width * dpr;
+      canvas.height = window.innerHeight * dpr;
+      canvas.style.width = width + "px";
+      canvas.style.height = window.innerHeight + "px";
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function createParticle() {
+      return {
+        x: Math.random() * width,
+        y: Math.random() * window.innerHeight,
+        radius: Math.random() * 1.6 + 0.6,
+        speedY: -(Math.random() * 0.12 + 0.03),
+        speedX: (Math.random() - 0.5) * 0.05,
+        opacity: Math.random() * 0.35 + 0.08,
+        phase: Math.random() * Math.PI * 2,
+      };
+    }
+
+    function seedParticles() {
+      particles = [];
+      for (var i = 0; i < particleCount; i++) {
+        particles.push(createParticle());
+      }
+    }
+
+    function tick(time) {
+      ctx.clearRect(0, 0, width, window.innerHeight);
+      particles.forEach(function (p) {
+        p.y += p.speedY;
+        p.x += p.speedX + Math.sin(time / 4000 + p.phase) * 0.05;
+
+        if (p.y < -10) {
+          p.y = window.innerHeight + 10;
+          p.x = Math.random() * width;
+        }
+
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(200, 169, 106, " + p.opacity + ")";
+        ctx.fill();
+      });
+
+      requestAnimationFrame(tick);
+    }
+
+    resize();
+    seedParticles();
+    requestAnimationFrame(tick);
+
+    var resizeTimeout;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function () {
+        resize();
+        seedParticles();
+      }, 200);
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    initIntro();
+    initScrollReveal();
+    initParticleField();
+    initCursorSparkle();
+    initHeroStars();
+    initShootingStars();
+    initCardTilt();
+    initEnvelope();
+    initSurprises();
+    initFinalGame();
+    initSound();
+
+    document.addEventListener(
+      "pointerdown",
+      function () {
+        hasInteracted = true;
+      },
+      { once: true }
+    );
+  });
+
+  /* =========================================================
+     PREMIUM CINEMATIC ENHANCEMENT LAYER
+     All new features wired in. No breaking changes.
+     ========================================================= */
+
+  /* Navigation state management */
+  var navigationState = {
+    currentSection: 'intro',
+    history: [],
+    canGoBack: false
+  };
+
+  /* Back navigation system */
+  function initBackNavigation() {
+    var backBtn = document.querySelector('.back-btn') || createBackButton();
+    if (!backBtn) return;
+
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('[data-section]') && !e.target.closest('.back-btn')) {
+        navigationState.currentSection = e.target.closest('[data-section]').getAttribute('data-section');
+        navigationState.canGoBack = true;
+        updateBackButton();
+      }
+    });
+
+    backBtn.addEventListener('click', goBack);
+  }
+
+  function createBackButton() {
+    var btn = document.createElement('button');
+    btn.className = 'back-btn';
+    btn.setAttribute('aria-label', 'عودة');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 19l-7-7 7-7"/></svg>';
+    document.body.insertBefore(btn, document.body.firstChild);
+    return btn;
+  }
+
+  function goBack() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    navigationState.currentSection = 'intro';
+    navigationState.canGoBack = false;
+    updateBackButton();
+  }
+
+  function updateBackButton() {
+    var btn = document.querySelector('.back-btn');
+    if (!btn) return;
+    if (navigationState.canGoBack) {
+      btn.classList.add('is-visible');
+    } else {
+      btn.classList.remove('is-visible');
+    }
+  }
+
+  /* Advanced letter interaction with typewriter */
+  function initLetterInteraction() {
+    var envelope = document.getElementById('envelope');
+    var letterPaper = document.getElementById('letter-paper');
+    if (!envelope || !letterPaper) return;
+
+    var isOpen = false;
+    var typewriterStarted = false;
+
+    function toggleEnvelope() {
+      isOpen = !isOpen;
+      if (isOpen) {
+        envelope.classList.add('is-open');
+        document.getElementById('envelope-stage').classList.add('is-open');
+        letterPaper.classList.add('is-open');
+        if (!typewriterStarted) {
+          startTypewriter();
+          typewriterStarted = true;
+        }
+      } else {
+        envelope.classList.remove('is-open');
+        document.getElementById('envelope-stage').classList.remove('is-open');
+        letterPaper.classList.remove('is-open');
+        typewriterStarted = false;
+      }
+      createParticleBurst(envelope.getBoundingClientRect());
+    }
+
+    envelope.addEventListener('click', toggleEnvelope);
+    envelope.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleEnvelope();
+      }
+    });
+  }
+
+  function startTypewriter() {
+    var textElements = document.querySelectorAll('.letter-paper .arabic-text');
+    textElements.forEach(function(el, i) {
+      setTimeout(function() {
+        el.classList.add('is-visible');
+      }, i * 800);
+    });
+  }
+
+  /* Quiz/Question reveal system */
+  /* Initialize question state based on localStorage */
+  function initQuestionState() {
+    var questionAnswered = localStorage.getItem('fransiya-question-answered');
+    
+    if (questionAnswered === 'true') {
+      // Questions were answered in a previous visit - hide them
+      var heartQuestion = document.getElementById('heart-question');
+      var futureQuestion = document.getElementById('future-question');
+      var finalQuestion = document.getElementById('final-question');
+      
+      if (heartQuestion) heartQuestion.style.display = 'none';
+      if (futureQuestion) futureQuestion.style.display = 'none';
+      
+      if (finalQuestion) {
+        finalQuestion.style.display = 'none';
+      }
+    }
+  }
+
+  function initQuizSystem() {
+    var questions = document.querySelectorAll('.quiz-question');
+    if (!questions.length) return;
+
+    // Check if questions have already been shown in this session
+    var questionsAlreadyShown = sessionStorage.getItem('fransiya-questions-shown');
+    
+    // Only show questions on first visit
+    if (!questionsAlreadyShown) {
+      questions.forEach(function(q, i) {
+        setTimeout(function() {
+          q.classList.add('is-active');
+        }, i * 600 + 200);
+      });
+      
+      // Mark that questions have been shown this session
+      sessionStorage.setItem('fransiya-questions-shown', 'true');
+    } else {
+      // Questions already shown this session - make them visible but don't animate
+      questions.forEach(function(q) {
+        q.classList.add('is-active');
+      });
+    }
+
+    // Attach event listeners to answer options
+    document.querySelectorAll('.answer-option').forEach(function(option) {
+      option.addEventListener('click', function() {
+        option.classList.add('selected');
+        createParticleBurst(option.getBoundingClientRect());
+        
+        // Save that question was answered to localStorage (persists across sessions)
+        localStorage.setItem('fransiya-question-answered', 'true');
+        
+        // Spawn small particles around the selected answer
+        for (var i = 0; i < 4; i++) {
+          setTimeout(function() {
+            spawnAnswerParticle(option);
+          }, i * 100);
+        }
+      });
+
+      option.addEventListener('mouseenter', function() {
+        if (!prefersReducedMotion) {
+          createMicroRipple(this);
+        }
+      });
+    });
+  }
+
+  function spawnAnswerParticle(element) {
+    if (prefersReducedMotion) return;
+    var canvas = document.getElementById('confetti-field');
+    if (!canvas) return;
+    var rect = element.getBoundingClientRect();
+    var particle = {
+      x: rect.left + rect.width / 2,
+      y: rect.top + rect.height / 2,
+      vx: (Math.random() - 0.5) * 3,
+      vy: (Math.random() - 0.5) * 3 - 1,
+      life: 1,
+      size: 2 + Math.random() * 2
+    };
+
+    var ctx = canvas.getContext('2d');
+    var start = performance.now();
+
+    (function animateParticle() {
+      var now = performance.now();
+      var elapsed = now - start;
+      if (elapsed > 1200) return;
+
+      particle.x += particle.vx;
+      particle.y += particle.vy;
+      particle.life -= 0.01;
+      particle.vy -= 0.1; // gravity
+
+      ctx.fillStyle = 'rgba(200,169,106,' + Math.max(particle.life, 0) + ')';
+      ctx.beginPath();
+      ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (particle.life > 0) {
+        requestAnimationFrame(animateParticle);
+      }
+    })();
+  }
+
+  /* Advanced NO button escape logic */
+  function initAdvancedNoButton() {
+    var noBtn = document.getElementById('no-btn');
+    var yesBtn = document.getElementById('yes-btn');
+    if (!noBtn || !yesBtn) return;
+
+    var attempts = 0;
+    var lastEscapeType = -1;
+    var isLoose = false;
+    var mouseX = 0;
+    var mouseY = 0;
+
+    /* Desktop: track mouse and predict movement */
+    if (pointerIsFine) {
+      document.addEventListener('mousemove', function(e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        checkProximityAndEscape();
+      });
+
+      function checkProximityAndEscape() {
+        var rect = noBtn.getBoundingClientRect();
+        var btnCenterX = rect.left + rect.width / 2;
+        var btnCenterY = rect.top + rect.height / 2;
+        var distance = Math.hypot(mouseX - btnCenterX, mouseY - btnCenterY);
+
+        var safeZone = 140 + attempts * 20;
+        if (distance < safeZone && distance > 0) {
+          escapeButtonDesktop();
+        }
+      }
+    }
+
+    /* Mobile: escape on touchstart before touch can register */
+    noBtn.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      escapeButtonMobile();
+    }, { passive: false });
+
+    /* Click prevention */
+    noBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      escapeButtonDesktop();
+    });
+
+    function escapeButtonDesktop() {
+      attempts++;
+      if (isLoose && attempts > 8) {
+        showFunnyMessage();
+        return;
+      }
+
+      var escapeType = attempts % 5;
+      if (escapeType === lastEscapeType) {
+        escapeType = (escapeType + 1) % 5;
+      }
+      lastEscapeType = escapeType;
+
+      var viewport = {
+        w: window.innerWidth,
+        h: window.innerHeight
+      };
+
+      noBtn.classList.add('is-loose');
+      if (!isLoose) { isLoose = true; }
+
+      var newX, newY, newRot, newScale;
+
+      switch(escapeType) {
+        case 0: // Dart away
+          newX = Math.random() > 0.5 ? -300 : 300;
+          newY = (Math.random() - 0.5) * 200;
+          newRot = 0;
+          newScale = 1;
+          break;
+        case 1: // Faster escape
+          newX = Math.random() > 0.5 ? -200 : 200;
+          newY = (Math.random() - 0.5) * 300;
+          newRot = 0;
+          newScale = 1;
+          break;
+        case 2: // Swap positions with YES
+          var yesRect = yesBtn.getBoundingClientRect();
+          newX = yesRect.left - (noBtn.getBoundingClientRect().left) + 50;
+          newY = yesRect.top - (noBtn.getBoundingClientRect().top);
+          newRot = 0;
+          newScale = 1;
+          break;
+        case 3: // Spin away
+          newX = (Math.random() - 0.5) * 250;
+          newY = (Math.random() - 0.5) * 250;
+          newRot = Math.random() * 720 - 360;
+          newScale = 1;
+          break;
+        case 4: // Shrink and hide
+          newX = 0;
+          newY = 0;
+          newRot = 0;
+          newScale = 0.3;
+          break;
+      }
+
+      noBtn.style.setProperty('--escape-x', newX + 'px');
+      noBtn.style.setProperty('--escape-y', newY + 'px');
+      noBtn.style.setProperty('--escape-rot', newRot + 'deg');
+      noBtn.classList.remove('escape-1', 'escape-2', 'escape-3', 'escape-4', 'escape-5');
+      noBtn.classList.add('escape-' + (escapeType + 1));
+
+      // Reset animation for next attempt
+      setTimeout(function() {
+        noBtn.classList.remove('escape-1', 'escape-2', 'escape-3', 'escape-4', 'escape-5');
+        noBtn.style.transform = 'translate(' + newX + 'px, ' + newY + 'px) rotate(' + newRot + 'deg) scale(' + newScale + ')';
+      }, 400);
+    }
+
+    function escapeButtonMobile() {
+      attempts++;
+      if (isLoose && attempts > 6) {
+        showFunnyMessage();
+        return;
+      }
+
+      var randomPos = randomMobilePosition();
+      var randomSize = 0.85 + Math.random() * 0.3;
+
+      noBtn.style.position = 'fixed';
+      noBtn.style.left = randomPos.x + 'px';
+      noBtn.style.top = randomPos.y + 'px';
+      noBtn.style.transform = 'scale(' + randomSize + ') rotate(' + (Math.random() * 30 - 15) + 'deg)';
+
+      if (!isLoose) { isLoose = true; }
+    }
+
+    function randomMobilePosition() {
+      var margin = 16;
+      var btn = noBtn.getBoundingClientRect();
+      return {
+        x: margin + Math.random() * (window.innerWidth - btn.width - margin * 2),
+        y: margin + Math.random() * (window.innerHeight - btn.height - margin * 2)
+      };
+    }
+
+    function showFunnyMessage() {
+      var popup = document.getElementById('surprise-popup') || createSurprisePopup();
+      var text = popup.querySelector('p') || popup.querySelector('div');
+      if (text) {
+        text.textContent = 'یوق دیے آلمایسیز! بو مستحیل — شاید ہا دیسیز؟';
+        popup.classList.add('is-open');
+        setTimeout(function() {
+          popup.classList.remove('is-open');
+        }, 3000);
+      }
+    }
+
+    yesBtn.addEventListener('click', function() {
+      // Save that question was answered
+      localStorage.setItem('fransiya-question-answered', 'true');
+      sessionStorage.setItem('fransiya-question-completed', 'true');
+      
+      launchConfetti();
+      var answer = document.getElementById('final-answer');
+      if (answer) {
+        answer.classList.add('is-visible');
+      }
+      yesBtn.disabled = true;
+      yesBtn.style.opacity = '0.85';
+      noBtn.style.visibility = 'hidden';
+    });
+  }
+
+  /* Enhanced background animations */
+  function initBackgroundAnimations() {
+    if (prefersReducedMotion) return;
+
+    // Add floating ornaments to various sections
+    var sections = document.querySelectorAll('section');
+    sections.forEach(function(section, i) {
+      if (i % 3 === 0) {
+        var ornament = document.createElement('div');
+        ornament.className = 'floating-ornament floating-ornament--a';
+        ornament.innerHTML = '<svg viewBox="0 0 40 40"><use href="#motif-star" /></svg>';
+        section.appendChild(ornament);
+      }
+      if (i % 4 === 0) {
+        var cloud = document.createElement('div');
+        cloud.className = 'floating-cloud floating-cloud--' + ((i % 3) + 1);
+        section.appendChild(cloud);
+      }
+    });
+
+    // Add light orbs
+    var lightOrbs = [
+      { cls: 'light-orb--1', delay: 0 },
+      { cls: 'light-orb--2', delay: 4 },
+      { cls: 'light-orb--3', delay: 8 }
+    ];
+
+    lightOrbs.forEach(function(orb) {
+      var el = document.createElement('div');
+      el.className = 'light-orb ' + orb.cls;
+      el.style.animationDelay = orb.delay + 's';
+      document.body.insertBefore(el, document.body.firstChild.nextSibling);
+    });
+
+    // Moonlight sweep
+    var moonlight = document.createElement('div');
+    moonlight.className = 'moonlight-sweep';
+    document.body.insertBefore(moonlight, document.body.firstChild.nextSibling);
+  }
+
+  /* Micro-interactions: Create ripple on click */
+  function createMicroRipple(element) {
+    var rect = element.getBoundingClientRect();
+    var ripple = document.createElement('span');
+    ripple.className = 'interactive-ripple';
+    ripple.style.width = '8px';
+    ripple.style.height = '8px';
+    ripple.style.left = rect.width / 2 + 'px';
+    ripple.style.top = rect.height / 2 + 'px';
+    element.appendChild(ripple);
+    setTimeout(function() { ripple.remove(); }, 600);
+  }
+
+  /* Particle burst for surprise moments */
+  function createParticleBurst(rect) {
+    if (prefersReducedMotion) return;
+    var canvas = document.getElementById('confetti-field') || document.getElementById('particle-field');
+    if (!canvas) return;
+    var ctx = canvas.getContext('2d');
+
+    for (var i = 0; i < 8; i++) {
+      var angle = (Math.PI * 2 * i) / 8;
+      var speed = 2 + Math.random() * 2;
+      var particle = {
+        x: rect.left + rect.width / 2,
+        y: rect.top + rect.height / 2,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        life: 1
+      };
+
+      (function(p) {
+        var start = performance.now();
+        (function animate(now) {
+          var elapsed = now - start;
+          if (elapsed > 800) return;
+
+          p.x += p.vx;
+          p.y += p.vy;
+          p.life -= 0.0015;
+          p.vy += 0.15; // gravity
+
+          ctx.fillStyle = 'rgba(200,169,106,' + Math.max(p.life, 0) * 0.8 + ')';
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 2, 0, Math.PI * 2);
+          ctx.fill();
+
+          if (p.life > 0) {
+            requestAnimationFrame(animate);
+          }
+        })(performance.now());
+      })(particle);
+    }
+  }
+
+  /* Surprise moments: scattered throughout experience */
+  function initSurprises() {
+    var surprises = [
+      {
+        selector: '#description',
+        message: 'ہر سطر قلب سے لکھا گیا ہے.'
+      },
+      {
+        selector: '#feelings',
+        message: 'سیزنی یادمنی محبت بیلن عمری کوتۆیی.'
+      },
+      {
+        selector: '#future',
+        message: 'الله بیز برکتلی محبتنی ریزق قیلسین.'
+      }
+    ];
+
+    surprises.forEach(function(s) {
+      var element = document.querySelector(s.selector);
+      if (element && Math.random() > 0.5) {
+        element.addEventListener('mouseenter', function() {
+          showSurprisePopup(s.message);
+        });
+      }
+    });
+  }
+
+  function showSurprisePopup(message) {
+    var popup = document.getElementById('surprise-popup') || createSurprisePopup();
+    var textEl = popup.querySelector('p');
+    if (textEl) {
+      textEl.textContent = message;
+      popup.classList.add('is-open');
+      createParticleBurst(popup.getBoundingClientRect());
+      setTimeout(function() {
+        popup.classList.remove('is-open');
+      }, 2500);
+    }
+  }
+
+  function createSurprisePopup() {
+    var popup = document.createElement('div');
+    popup.id = 'surprise-popup';
+    popup.className = 'surprise-popup';
+    popup.setAttribute('role', 'dialog');
+    popup.innerHTML = '<p></p><button class="surprise-popup__close">یوپیش</button>';
+    document.body.appendChild(popup);
+    popup.querySelector('.surprise-popup__close').addEventListener('click', function() {
+      popup.classList.remove('is-open');
+    });
+    return popup;
+  }
+
+  /* Enhanced scroll reveal with particle bursts */
+  function enhanceScrollReveals() {
+    var revealEls = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(
+      function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting && !entry.target.classList.contains('is-visible')) {
+            entry.target.classList.add('is-visible');
+            if (!prefersReducedMotion) {
+              createParticleBurst(entry.target.getBoundingClientRect());
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { root: null, rootMargin: '0px 0px -15% 0px', threshold: 0.2 }
+    );
+
+    revealEls.forEach(function(el) {
+      observer.observe(el);
+    });
+  }
+
+  /* Add glow effects to interactive elements */
+  function initGlowEffects() {
+    var glowables = document.querySelectorAll('.heading-lg, .heading-md, .signature-line');
+    glowables.forEach(function(el) {
+      el.classList.add('glow-on-hover');
+    });
+  }
+
+  /* Extra polish: Enhance cursor behavior on NO button */
+  function refineNoButtonBehavior() {
+    var noBtn = document.getElementById('no-btn');
+    if (!noBtn || !pointerIsFine) return;
+
+    /* Predict cursor trajectory and escape preemptively */
+    var lastMouseX = 0, lastMouseY = 0;
+    var mouseVelX = 0, mouseVelY = 0;
+
+    document.addEventListener('mousemove', function(e) {
+      var deltaX = e.clientX - lastMouseX;
+      var deltaY = e.clientY - lastMouseY;
+      mouseVelX = deltaX;
+      mouseVelY = deltaY;
+      lastMouseX = e.clientX;
+      lastMouseY = e.clientY;
+    });
+  }
+
+  /* Add smooth scroll behavior to all scroll-cue links */
+  function enhanceSmoothScroll() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          navigationState.currentSection = this.getAttribute('href').substring(1);
+          navigationState.canGoBack = true;
+          updateBackButton();
+        }
+      });
+    });
+  }
+
+  /* Add sound-ready structure (audio management) */
+  function setupAudioContext() {
+    var audio = document.getElementById('ambient-audio');
+    if (!audio) return;
+
+    /* Only initialize on first user interaction */
+    var audioInitialized = false;
+    function initAudio() {
+      if (audioInitialized || !audio.parentElement) return;
+      audioInitialized = true;
+      /* Audio ready - toggle button can now play */
+    }
+
+    document.addEventListener('pointerdown', initAudio, { once: true });
+    document.addEventListener('touchstart', initAudio, { once: true });
+    document.addEventListener('click', initAudio, { once: true });
+  }
+
+  /* Initialize all enhancements on DOMContentLoaded */
+  function initializeEnhancements() {
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeEnhancements);
+      return;
+    }
+
+    // Check localStorage first - hide questions if already answered in previous visit
+    initQuestionState();
+
+    initBackNavigation();
+    initLetterInteraction();
+    initQuizSystem();
+    initAdvancedNoButton();
+    initBackgroundAnimations();
+    initSurprises();
+    enhanceScrollReveals();
+    initGlowEffects();
+    refineNoButtonBehavior();
+    enhanceSmoothScroll();
+    setupAudioContext();
+
+    /* Show back button after intro */
+    setTimeout(function() {
+      if (!prefersReducedMotion) {
+        updateBackButton();
+      }
+    }, 6000);
+
+    /* Add extra animations to dividers on scroll */
+    document.querySelectorAll('.divider-line').forEach(function(divider, i) {
+      divider.style.animationDelay = (i * 0.2) + 's';
+    });
+
+    /* Enhance button transitions */
+    document.querySelectorAll('button, a').forEach(function(el) {
+      el.addEventListener('mouseenter', function() {
+        if (pointerIsFine && !prefersReducedMotion) {
+          createMicroRipple(this);
+        }
+      });
+    });
+  }
+
+  /* Hook into existing setup or run immediately */
+  if (typeof initIntro !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', initializeEnhancements);
+  } else {
+    initializeEnhancements();
+  }
+
+
+
+  })();
+
+  </script>
+</body>
+</html>
